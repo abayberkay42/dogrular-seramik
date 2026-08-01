@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900">
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#967060"/>
+      <stop offset="100%" stop-color="#6E5040"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="900" fill="url(#g)"/>
+  <line x1="0" y1="300" x2="1200" y2="300" stroke="#B08870" stroke-width="0.5" opacity="0.25"/>
+  <line x1="0" y1="600" x2="1200" y2="600" stroke="#B08870" stroke-width="0.5" opacity="0.25"/>
+  <line x1="400" y1="0" x2="400" y2="900" stroke="#B08870" stroke-width="0.5" opacity="0.25"/>
+  <line x1="800" y1="0" x2="800" y2="900" stroke="#B08870" stroke-width="0.5" opacity="0.25"/>
+  <text x="600" y="458" font-family="system-ui,sans-serif" font-size="13" fill="#D4C0B4" text-anchor="middle" opacity="0.35" letter-spacing="3">DOĞRULAR SERAMİK — KAPADOKYA</text>
+</svg>

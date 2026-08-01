@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900">
+  <defs>
+    <linearGradient id="base" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D0C0A0"/>
+      <stop offset="50%" stop-color="#B8A882"/>
+      <stop offset="100%" stop-color="#A09070"/>
+    </linearGradient>
+    <radialGradient id="rakelight" cx="10%" cy="8%" r="75%">
+      <stop offset="0%" stop-color="#E8D8BE" stop-opacity="0.75"/>
+      <stop offset="100%" stop-color="transparent"/>
+    </radialGradient>
+    <radialGradient id="shadow" cx="92%" cy="96%" r="55%">
+      <stop offset="0%" stop-color="#6A5A3C" stop-opacity="0.38"/>
+      <stop offset="100%" stop-color="transparent"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="900" fill="url(#base)"/>
+  <rect width="1200" height="900" fill="url(#rakelight)"/>
+  <rect width="1200" height="900" fill="url(#shadow)"/>
+  <!-- Large-format tile grout lines — 600×300 format implied -->
+  <line x1="0" y1="300" x2="1200" y2="300" stroke="#8A7A5E" stroke-width="0.9" opacity="0.42"/>
+  <line x1="0" y1="600" x2="1200" y2="600" stroke="#8A7A5E" stroke-width="0.9" opacity="0.42"/>
+  <line x1="400" y1="0" x2="400" y2="900" stroke="#8A7A5E" stroke-width="0.9" opacity="0.32"/>
+  <line x1="800" y1="0" x2="800" y2="900" stroke="#8A7A5E" stroke-width="0.9" opacity="0.32"/>
+  <!-- Surface veining — natural stone character, gentle diagonals -->
+  <line x1="0" y1="148" x2="820" y2="178" stroke="#B0A07A" stroke-width="0.6" opacity="0.28"/>
+  <line x1="220" y1="255" x2="1200" y2="228" stroke="#B0A07A" stroke-width="0.5" opacity="0.2"/>
+  <line x1="0" y1="452" x2="1050" y2="418" stroke="#B0A07A" stroke-width="0.6" opacity="0.28"/>
+  <line x1="90" y1="530" x2="1200" y2="548" stroke="#B0A07A" stroke-width="0.5" opacity="0.2"/>
+  <line x1="0" y1="705" x2="880" y2="682" stroke="#B0A07A" stroke-width="0.6" opacity="0.24"/>
+  <line x1="310" y1="822" x2="1200" y2="804" stroke="#B0A07A" stroke-width="0.5" opacity="0.18"/>
+  <!-- Specular highlight — light catching the polished surface -->
+  <rect x="0" y="0" width="320" height="250" fill="#DDD0B0" opacity="0.18"/>
+  <text x="600" y="876" font-family="system-ui,sans-serif" font-size="9" fill="#7A6A4E" text-anchor="middle" opacity="0.22" letter-spacing="4">DOĞRULAR SERAMİK — BÜYÜK FORMAT PORSELEN — YÜZEY PORTRESI</text>
+</svg>

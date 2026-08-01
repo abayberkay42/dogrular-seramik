@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 900" width="1400" height="900">
+  <defs>
+    <linearGradient id="g" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1C1814"/>
+      <stop offset="50%" stop-color="#2E2820"/>
+      <stop offset="100%" stop-color="#3A3228"/>
+    </linearGradient>
+    <linearGradient id="light" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#C8B89A" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="transparent"/>
+    </linearGradient>
+  </defs>
+  <rect width="1400" height="900" fill="url(#g)"/>
+  <!-- Open plan — horizontal lines suggest floor plane extending -->
+  <line x1="0" y1="450" x2="1400" y2="450" stroke="#4A4035" stroke-width="0.7" opacity="0.4"/>
+  <line x1="0" y1="600" x2="1400" y2="600" stroke="#4A4035" stroke-width="0.7" opacity="0.3"/>
+  <line x1="0" y1="300" x2="1400" y2="300" stroke="#4A4035" stroke-width="0.7" opacity="0.25"/>
+  <!-- Vertical columns -->
+  <line x1="350" y1="0" x2="350" y2="900" stroke="#4A4035" stroke-width="0.7" opacity="0.3"/>
+  <line x1="700" y1="0" x2="700" y2="900" stroke="#4A4035" stroke-width="0.7" opacity="0.3"/>
+  <line x1="1050" y1="0" x2="1050" y2="900" stroke="#4A4035" stroke-width="0.7" opacity="0.3"/>
+  <!-- Top light — window light flooding from top -->
+  <rect x="0" y="0" width="1400" height="300" fill="url(#light)"/>
+  <text x="700" y="462" font-family="system-ui,sans-serif" font-size="10" fill="#7A6A58" text-anchor="middle" opacity="0.32" letter-spacing="4">DOĞRULAR SERAMİK — BOĞAZİÇİ VİLLA — AÇIK PLAN 02</text>
+</svg>

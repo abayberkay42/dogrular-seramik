@@ -1,0 +1,923 @@
+{
+  "armada": {
+    "armada-latte-45x45-parlak-75mm": "/images/varyant/armada-latte-45x45-parlak-75mm.webp",
+    "armada-latte-30x90-parlak-9mm": "/images/varyant/armada-latte-30x90-parlak-9mm.webp",
+    "armada-lines-dekor-30x90-parlak-9mm": "/images/varyant/armada-lines-dekor-30x90-parlak-9mm.webp",
+    "armada-vizon-45x45-parlak-75mm": "/images/varyant/armada-vizon-45x45-parlak-75mm.webp",
+    "armada-vizon-30x90-parlak-9mm": "/images/varyant/armada-vizon-30x90-parlak-9mm.webp"
+  },
+  "gediz": {
+    "gediz-acik-gri-30x90-parlak-9mm": "/images/varyant/gediz-acik-gri-30x90-parlak-9mm.webp",
+    "gediz-gri-60x60-full-lappato-9mm": "/images/varyant/gediz-gri-60x60-full-lappato-9mm.webp",
+    "gediz-gri-60x120-full-lappato-9mm": "/images/varyant/gediz-gri-60x120-full-lappato-9mm.webp",
+    "gediz-yesil-60x60-full-lappato-9mm": "/images/varyant/gediz-yesil-60x60-full-lappato-9mm.webp"
+  },
+  "hatay": {
+    "hatay-acik-bej-45x45-parlak-75mm": "/images/varyant/hatay-acik-bej-45x45-parlak-75mm.webp",
+    "hatay-acik-bej-30x90-parlak-9mm": "/images/varyant/hatay-acik-bej-30x90-parlak-9mm.webp",
+    "hatay-acik-gri-45x45-parlak-75mm": "/images/varyant/hatay-acik-gri-45x45-parlak-75mm.webp",
+    "hatay-acik-gri-30x90-parlak-9mm": "/images/varyant/hatay-acik-gri-30x90-parlak-9mm.webp",
+    "hatay-defne-koyu-bej-30x90-parlak-9mm": "/images/varyant/hatay-defne-koyu-bej-30x90-parlak-9mm.webp",
+    "hatay-defne-koyu-gri-30x90-parlak-9mm": "/images/varyant/hatay-defne-koyu-gri-30x90-parlak-9mm.webp",
+    "hatay-koyu-bej-45x45-parlak-75mm": "/images/varyant/hatay-koyu-bej-45x45-parlak-75mm.webp",
+    "hatay-koyu-gri-45x45-parlak-75mm": "/images/varyant/hatay-koyu-gri-45x45-parlak-75mm.webp"
+  },
+  "zenith": {
+    "zenith-antrasit-30x90-mat-9mm": "/images/varyant/zenith-antrasit-30x90-mat-9mm.webp",
+    "zenith-bej-30x90-mat-9mm": "/images/varyant/zenith-bej-30x90-mat-9mm.webp",
+    "zenith-bej-60x60-mat-9mm": "/images/varyant/zenith-bej-60x60-mat-9mm.webp",
+    "zenith-beyaz-30x90-mat-9mm": "/images/varyant/zenith-beyaz-30x90-mat-9mm.webp",
+    "zenith-bone-30x90-mat-9mm": "/images/varyant/zenith-bone-30x90-mat-9mm.webp",
+    "zenith-geo-dekor-30x90-mat-9mm": "/images/varyant/zenith-geo-dekor-30x90-mat-9mm.webp",
+    "zenith-gri-30x90-mat-9mm": "/images/varyant/zenith-gri-30x90-mat-9mm.webp",
+    "zenith-gri-60x60-mat-9mm": "/images/varyant/zenith-gri-60x60-mat-9mm.webp",
+    "zenith-leather-bej-30x90-mat-9mm": "/images/varyant/zenith-leather-bej-30x90-mat-9mm.webp",
+    "zenith-leather-gri-30x90-mat-9mm": "/images/varyant/zenith-leather-gri-30x90-mat-9mm.webp",
+    "zenith-mirror-30x90-mat-9mm": "/images/varyant/zenith-mirror-30x90-mat-9mm.webp",
+    "zenith-mozaik-bej-30x90-mat-9mm": "/images/varyant/zenith-mozaik-bej-30x90-mat-9mm.webp",
+    "zenith-mozaik-gri-30x90-mat-9mm": "/images/varyant/zenith-mozaik-gri-30x90-mat-9mm.webp",
+    "zenith-taba-30x90-mat-9mm": "/images/varyant/zenith-taba-30x90-mat-9mm.webp"
+  },
+  "aspendos": {
+    "aspendos-antrasit-60x120-full-lappato-75mm": "/images/varyant/aspendos-antrasit-60x120-full-lappato-75mm.webp",
+    "aspendos-acik-gri-60x120-full-lappato-75mm": "/images/varyant/aspendos-acik-gri-60x120-full-lappato-75mm.webp",
+    "aspendos-beyaz-60x120-full-lappato-75mm": "/images/varyant/aspendos-beyaz-60x120-full-lappato-75mm.webp",
+    "aspendos-koyu-gri-60x120-full-lappato-75mm": "/images/varyant/aspendos-koyu-gri-60x120-full-lappato-75mm.webp"
+  },
+  "riva": {
+    "riva-antrasit-60x120-mat-75mm": "/images/varyant/riva-antrasit-60x120-mat-75mm.webp",
+    "riva-antrasit-60x120-full-lappato-75mm": "/images/varyant/riva-antrasit-60x120-full-lappato-75mm.webp",
+    "riva-antrasit-60x120-semi-lappato-75mm": "/images/varyant/riva-antrasit-60x120-semi-lappato-75mm.webp",
+    "riva-bej-60x120-mat-75mm": "/images/varyant/riva-bej-60x120-mat-75mm.webp",
+    "riva-bej-60x120-full-lappato-75mm": "/images/varyant/riva-bej-60x120-full-lappato-75mm.webp",
+    "riva-bej-60x120-semi-lappato-75mm": "/images/varyant/riva-bej-60x120-semi-lappato-75mm.webp",
+    "riva-beyaz-60x120-mat-75mm": "/images/varyant/riva-beyaz-60x120-mat-75mm.webp",
+    "riva-beyaz-60x120-full-lappato-75mm": "/images/varyant/riva-beyaz-60x120-full-lappato-75mm.webp",
+    "riva-beyaz-60x120-semi-lappato-75mm": "/images/varyant/riva-beyaz-60x120-semi-lappato-75mm.webp",
+    "riva-vizon-60x120-mat-75mm": "/images/varyant/riva-vizon-60x120-mat-75mm.webp",
+    "riva-vizon-60x120-full-lappato-75mm": "/images/varyant/riva-vizon-60x120-full-lappato-75mm.webp",
+    "riva-vizon-60x120-semi-lappato-75mm": "/images/varyant/riva-vizon-60x120-semi-lappato-75mm.webp"
+  },
+  "nox": {
+    "nox-ash-60x120-full-lappato-75mm": "/images/varyant/nox-ash-60x120-full-lappato-75mm.webp"
+  },
+  "perge": {
+    "perge-acik-gri-60x120-full-lappato-75mm": "/images/varyant/perge-acik-gri-60x120-full-lappato-75mm.webp",
+    "perge-gri-60x120-full-lappato-75mm": "/images/varyant/perge-gri-60x120-full-lappato-75mm.webp",
+    "perge-koyu-gri-60x120-full-lappato-75mm": "/images/varyant/perge-koyu-gri-60x120-full-lappato-75mm.webp"
+  },
+  "finike": {
+    "finike-bej-60x120-sparkly-75mm": "/images/varyant/finike-bej-60x120-sparkly-75mm.webp",
+    "finike-bone-60x120-sparkly-75mm": "/images/varyant/finike-bone-60x120-sparkly-75mm.webp",
+    "finike-gri-60x120-sparkly-75mm": "/images/varyant/finike-gri-60x120-sparkly-75mm.webp"
+  },
+  "plain": {
+    "plain-antrasit-60x120-mat-75mm": "/images/varyant/plain-antrasit-60x120-mat-75mm.webp",
+    "plain-bone-60x120-mat-75mm": "/images/varyant/plain-bone-60x120-mat-75mm.webp",
+    "plain-pearl-60x120-mat-75mm": "/images/varyant/plain-pearl-60x120-mat-75mm.webp",
+    "plain-pure-60x120-mat-75mm": "/images/varyant/plain-pure-60x120-mat-75mm.webp"
+  },
+  "sava": {
+    "sava-antrasit-60x120-full-lappato-75mm": "/images/varyant/sava-antrasit-60x120-full-lappato-75mm.webp"
+  },
+  "sardes": {
+    "sardes-acik-gri-60x120-full-lappato-75mm": "/images/varyant/sardes-acik-gri-60x120-full-lappato-75mm.webp"
+  },
+  "alanya": {
+    "alanya-bej-30x60-parlak-75mm": "/images/varyant/alanya-bej-30x60-parlak-75mm.webp",
+    "alanya-bej-45x45-parlak-75mm": "/images/varyant/alanya-bej-45x45-parlak-75mm.webp",
+    "alanya-bej-60x120-full-lappato-9mm": "/images/varyant/alanya-bej-60x120-full-lappato-9mm.webp",
+    "alanya-beyaz-60x120-full-lappato-9mm": "/images/varyant/alanya-beyaz-60x120-full-lappato-9mm.webp",
+    "alanya-gri-30x60-parlak-75mm": "/images/varyant/alanya-gri-30x60-parlak-75mm.webp",
+    "alanya-gri-45x45-parlak-75mm": "/images/varyant/alanya-gri-45x45-parlak-75mm.webp",
+    "alanya-kahve-30x60-parlak-75mm": "/images/varyant/alanya-kahve-30x60-parlak-75mm.webp",
+    "alanya-kahve-45x45-parlak-75mm": "/images/varyant/alanya-kahve-45x45-parlak-75mm.webp",
+    "alanya-siyah-30x60-parlak-75mm": "/images/varyant/alanya-siyah-30x60-parlak-75mm.webp",
+    "alanya-siyah-45x45-parlak-75mm": "/images/varyant/alanya-siyah-45x45-parlak-75mm.webp",
+    "alanya-siyah-60x120-full-lappato-9mm": "/images/varyant/alanya-siyah-60x120-full-lappato-9mm.webp"
+  },
+  "atlantis": {
+    "atlantis-antrasit-60x60-full-lappato-9mm": "/images/varyant/atlantis-antrasit-60x60-full-lappato-9mm.webp",
+    "atlantis-antrasit-60x120-full-lappato-9mm": "/images/varyant/atlantis-antrasit-60x120-full-lappato-9mm.webp",
+    "atlantis-bej-60x60-full-lappato-9mm": "/images/varyant/atlantis-bej-60x60-full-lappato-9mm.webp",
+    "atlantis-bej-60x120-full-lappato-9mm": "/images/varyant/atlantis-bej-60x120-full-lappato-9mm.webp",
+    "atlantis-gri-60x60-full-lappato-9mm": "/images/varyant/atlantis-gri-60x60-full-lappato-9mm.webp",
+    "atlantis-gri-60x120-full-lappato-9mm": "/images/varyant/atlantis-gri-60x120-full-lappato-9mm.webp",
+    "atlantis-kahve-60x60-full-lappato-9mm": "/images/varyant/atlantis-kahve-60x60-full-lappato-9mm.webp",
+    "atlantis-kahve-60x120-full-lappato-9mm": "/images/varyant/atlantis-kahve-60x120-full-lappato-9mm.webp"
+  },
+  "bolu": {
+    "bolu-acik-gri-60x120-full-lappato-9mm": "/images/varyant/bolu-acik-gri-60x120-full-lappato-9mm.webp",
+    "bolu-gri-60x60-full-lappato-9mm": "/images/varyant/bolu-gri-60x60-full-lappato-9mm.webp"
+  },
+  "dover": {
+    "dover-gri-60x60-full-lappato-9mm": "/images/varyant/dover-gri-60x60-full-lappato-9mm.webp",
+    "dover-gri-60x120-full-lappato-9mm": "/images/varyant/dover-gri-60x120-full-lappato-9mm.webp",
+    "dover-luxy-60x60-full-lappato-9mm": "/images/varyant/dover-luxy-60x60-full-lappato-9mm.webp",
+    "dover-luxy-60x120-full-lappato-9mm": "/images/varyant/dover-luxy-60x120-full-lappato-9mm.webp",
+    "dover-misty-60x60-full-lappato-9mm": "/images/varyant/dover-misty-60x60-full-lappato-9mm.webp",
+    "dover-misty-60x120-full-lappato-9mm": "/images/varyant/dover-misty-60x120-full-lappato-9mm.webp"
+  },
+  "efes": {
+    "efes-acik-gri-60x120-full-lappato-9mm": "/images/varyant/efes-acik-gri-60x120-full-lappato-9mm.webp",
+    "efes-koyu-gri-60x120-full-lappato-9mm": "/images/varyant/efes-koyu-gri-60x120-full-lappato-9mm.webp"
+  },
+  "dalaman": {
+    "dalaman-gri-60x120-full-lappato-9mm": "/images/varyant/dalaman-gri-60x120-full-lappato-9mm.webp"
+  },
+  "emperador": {
+    "emperador-kahve-60x120-full-lappato-9mm": "/images/varyant/emperador-kahve-60x120-full-lappato-9mm.webp",
+    "emperador-siyah-60x120-full-lappato-9mm": "/images/varyant/emperador-siyah-60x120-full-lappato-9mm.webp"
+  },
+  "himalaya": {
+    "himalaya-gri-45x90-full-lappato-9mm": "/images/varyant/himalaya-gri-45x90-full-lappato-9mm.webp",
+    "himalaya-gri-60x120-full-lappato-9mm": "/images/varyant/himalaya-gri-60x120-full-lappato-9mm.webp",
+    "himalaya-kahve-45x90-full-lappato-9mm": "/images/varyant/himalaya-kahve-45x90-full-lappato-9mm.webp",
+    "himalaya-kahve-60x120-full-lappato-9mm": "/images/varyant/himalaya-kahve-60x120-full-lappato-9mm.webp"
+  },
+  "karya": {
+    "karya-mavi-60x120-full-lappato-9mm": "/images/varyant/karya-mavi-60x120-full-lappato-9mm.webp"
+  },
+  "marbella": {
+    "marbella-beyaz-60x120-mat-9mm": "/images/varyant/marbella-beyaz-60x120-mat-9mm.webp",
+    "marbella-bone-60x120-mat-9mm": "/images/varyant/marbella-bone-60x120-mat-9mm.webp"
+  },
+  "meridyen": {
+    "meridyen-yesil-bookmatch-60x120-full-lappato-9mm": "/images/varyant/meridyen-yesil-bookmatch-60x120-full-lappato-9mm.webp",
+    "meridyen-yesil-60x120-full-lappato-9mm": "/images/varyant/meridyen-yesil-60x120-full-lappato-9mm.webp"
+  },
+  "mezo": {
+    "mezo-antrasit-60x120-full-lappato-9mm": "/images/varyant/mezo-antrasit-60x120-full-lappato-9mm.webp",
+    "mezo-bej-60x120-full-lappato-9mm": "/images/varyant/mezo-bej-60x120-full-lappato-9mm.webp",
+    "mezo-vizon-60x120-full-lappato-9mm": "/images/varyant/mezo-vizon-60x120-full-lappato-9mm.webp"
+  },
+  "mira": {
+    "mira-yesil-45x90-full-lappato-9mm": "/images/varyant/mira-yesil-45x90-full-lappato-9mm.webp",
+    "mira-yesil-60x120-full-lappato-9mm": "/images/varyant/mira-yesil-60x120-full-lappato-9mm.webp"
+  },
+  "mumbai": {
+    "mumbai-kahve-60x120-full-lappato-9mm": "/images/varyant/mumbai-kahve-60x120-full-lappato-9mm.webp"
+  },
+  "olimpos": {
+    "olimpos-bej-60x120-full-lappato-9mm": "/images/varyant/olimpos-bej-60x120-full-lappato-9mm.webp",
+    "olimpos-gri-60x120-full-lappato-9mm": "/images/varyant/olimpos-gri-60x120-full-lappato-9mm.webp"
+  },
+  "serenity": {
+    "serenity-beyaz-60x60-mat-9mm": "/images/varyant/serenity-beyaz-60x60-mat-9mm.webp",
+    "serenity-beyaz-45x90-mat-9mm": "/images/varyant/serenity-beyaz-45x90-mat-9mm.webp",
+    "serenity-beyaz-60x120-mat-9mm": "/images/varyant/serenity-beyaz-60x120-mat-9mm.webp",
+    "serenity-beyaz-60x60-full-lappato-9mm": "/images/varyant/serenity-beyaz-60x60-full-lappato-9mm.webp",
+    "serenity-beyaz-45x90-full-lappato-9mm": "/images/varyant/serenity-beyaz-45x90-full-lappato-9mm.webp",
+    "serenity-beyaz-60x120-full-lappato-9mm": "/images/varyant/serenity-beyaz-60x120-full-lappato-9mm.webp",
+    "serenity-beyaz-60x120-luxe-9mm": "/images/varyant/serenity-beyaz-60x120-luxe-9mm.webp",
+    "serenity-beyaz-60x120-sparkly-9mm": "/images/varyant/serenity-beyaz-60x120-sparkly-9mm.webp",
+    "serenity-graphite-60x60-mat-9mm": "/images/varyant/serenity-graphite-60x60-mat-9mm.webp",
+    "serenity-graphite-45x90-mat-9mm": "/images/varyant/serenity-graphite-45x90-mat-9mm.webp",
+    "serenity-graphite-60x120-mat-9mm": "/images/varyant/serenity-graphite-60x120-mat-9mm.webp",
+    "serenity-graphite-60x60-full-lappato-9mm": "/images/varyant/serenity-graphite-60x60-full-lappato-9mm.webp",
+    "serenity-graphite-45x90-full-lappato-9mm": "/images/varyant/serenity-graphite-45x90-full-lappato-9mm.webp",
+    "serenity-graphite-60x120-full-lappato-9mm": "/images/varyant/serenity-graphite-60x120-full-lappato-9mm.webp",
+    "serenity-silver-60x60-mat-9mm": "/images/varyant/serenity-silver-60x60-mat-9mm.webp",
+    "serenity-silver-45x90-mat-9mm": "/images/varyant/serenity-silver-45x90-mat-9mm.webp",
+    "serenity-silver-60x120-mat-9mm": "/images/varyant/serenity-silver-60x120-mat-9mm.webp",
+    "serenity-silver-60x60-full-lappato-9mm": "/images/varyant/serenity-silver-60x60-full-lappato-9mm.webp",
+    "serenity-silver-45x90-full-lappato-9mm": "/images/varyant/serenity-silver-45x90-full-lappato-9mm.webp",
+    "serenity-silver-60x120-full-lappato-9mm": "/images/varyant/serenity-silver-60x120-full-lappato-9mm.webp",
+    "serenity-silver-60x120-luxe-9mm": "/images/varyant/serenity-silver-60x120-luxe-9mm.webp",
+    "serenity-silver-60x120-sparkly-9mm": "/images/varyant/serenity-silver-60x120-sparkly-9mm.webp"
+  },
+  "sevilla": {
+    "sevilla-bone-60x120-mat-9mm": "/images/varyant/sevilla-bone-60x120-mat-9mm.webp",
+    "sevilla-bone-60x120-full-lappato-9mm": "/images/varyant/sevilla-bone-60x120-full-lappato-9mm.webp",
+    "sevilla-graphite-60x120-mat-9mm": "/images/varyant/sevilla-graphite-60x120-mat-9mm.webp",
+    "sevilla-graphite-60x120-full-lappato-9mm": "/images/varyant/sevilla-graphite-60x120-full-lappato-9mm.webp",
+    "sevilla-kahve-60x120-mat-9mm": "/images/varyant/sevilla-kahve-60x120-mat-9mm.webp",
+    "sevilla-kahve-60x120-full-lappato-9mm": "/images/varyant/sevilla-kahve-60x120-full-lappato-9mm.webp",
+    "sevilla-silver-60x120-mat-9mm": "/images/varyant/sevilla-silver-60x120-mat-9mm.webp",
+    "sevilla-silver-60x120-full-lappato-9mm": "/images/varyant/sevilla-silver-60x120-full-lappato-9mm.webp"
+  },
+  "paonazzo": {
+    "paonazzo-bianco-60x120-mat-9mm": "/images/varyant/paonazzo-bianco-60x120-mat-9mm.webp",
+    "paonazzo-bianco-60x120-full-lappato-9mm": "/images/varyant/paonazzo-bianco-60x120-full-lappato-9mm.webp"
+  },
+  "tinda": {
+    "tinda-antrasit-60x120-mat-9mm": "/images/varyant/tinda-antrasit-60x120-mat-9mm.webp",
+    "tinda-antrasit-60x120-full-lappato-9mm": "/images/varyant/tinda-antrasit-60x120-full-lappato-9mm.webp",
+    "tinda-antrasit-60x60-semi-lappato-9mm": "/images/varyant/tinda-antrasit-60x60-semi-lappato-9mm.webp",
+    "tinda-acik-gri-60x120-mat-9mm": "/images/varyant/tinda-acik-gri-60x120-mat-9mm.webp",
+    "tinda-acik-gri-60x60-semi-lappato-9mm": "/images/varyant/tinda-acik-gri-60x60-semi-lappato-9mm.webp",
+    "tinda-acik-gri-60x120-semi-lappato-9mm": "/images/varyant/tinda-acik-gri-60x120-semi-lappato-9mm.webp",
+    "tinda-bej-60x120-mat-9mm": "/images/varyant/tinda-bej-60x120-mat-9mm.webp",
+    "tinda-koyu-gri-60x120-mat-9mm": "/images/varyant/tinda-koyu-gri-60x120-mat-9mm.webp",
+    "tinda-koyu-gri-60x60-semi-lappato-9mm": "/images/varyant/tinda-koyu-gri-60x60-semi-lappato-9mm.webp"
+  },
+  "toros": {
+    "toros-antrasit-60x120-mat-9mm": "/images/varyant/toros-antrasit-60x120-mat-9mm.webp",
+    "toros-antrasit-60x120-full-lappato-9mm": "/images/varyant/toros-antrasit-60x120-full-lappato-9mm.webp",
+    "toros-bej-60x120-mat-9mm": "/images/varyant/toros-bej-60x120-mat-9mm.webp",
+    "toros-bej-60x120-full-lappato-9mm": "/images/varyant/toros-bej-60x120-full-lappato-9mm.webp",
+    "toros-bone-60x120-mat-9mm": "/images/varyant/toros-bone-60x120-mat-9mm.webp",
+    "toros-bone-60x120-full-lappato-9mm": "/images/varyant/toros-bone-60x120-full-lappato-9mm.webp",
+    "toros-gri-60x120-mat-9mm": "/images/varyant/toros-gri-60x120-mat-9mm.webp",
+    "toros-gri-60x120-full-lappato-9mm": "/images/varyant/toros-gri-60x120-full-lappato-9mm.webp"
+  },
+  "travertine": {
+    "travertine-gri-60x60-mat-9mm": "/images/varyant/travertine-gri-60x60-mat-9mm.webp",
+    "travertine-gri-60x120-mat-9mm": "/images/varyant/travertine-gri-60x120-mat-9mm.webp",
+    "travertine-krem-60x60-mat-9mm": "/images/varyant/travertine-krem-60x60-mat-9mm.webp",
+    "travertine-krem-60x120-mat-9mm": "/images/varyant/travertine-krem-60x120-mat-9mm.webp",
+    "travertine-krem-60x120-full-lappato-9mm": "/images/varyant/travertine-krem-60x120-full-lappato-9mm.webp"
+  },
+  "vega": {
+    "vega-gold-45x90-full-lappato-9mm": "/images/varyant/vega-gold-45x90-full-lappato-9mm.webp",
+    "vega-gold-60x120-full-lappato-9mm": "/images/varyant/vega-gold-60x120-full-lappato-9mm.webp"
+  },
+  "demre": {
+    "demre-bej-30x60-mat-75mm": "/images/varyant/demre-bej-30x60-mat-75mm.webp"
+  },
+  "simena": {
+    "simena-acik-bej-30x60-mat-75mm": "/images/varyant/simena-acik-bej-30x60-mat-75mm.webp",
+    "simena-gri-30x60-mat-75mm": "/images/varyant/simena-gri-30x60-mat-75mm.webp",
+    "simena-koyu-bej-30x60-mat-75mm": "/images/varyant/simena-koyu-bej-30x60-mat-75mm.webp"
+  },
+  "hazar": {
+    "hazar-acik-bej-30x60-parlak-75mm": "/images/varyant/hazar-acik-bej-30x60-parlak-75mm.webp",
+    "hazar-acik-bej-45x45-mat-75mm": "/images/varyant/hazar-acik-bej-45x45-mat-75mm.webp",
+    "hazar-acik-gri-30x60-parlak-75mm": "/images/varyant/hazar-acik-gri-30x60-parlak-75mm.webp",
+    "hazar-acik-gri-45x45-mat-75mm": "/images/varyant/hazar-acik-gri-45x45-mat-75mm.webp",
+    "hazar-dekor-bej-30x60-parlak-75mm": "/images/varyant/hazar-dekor-bej-30x60-parlak-75mm.webp",
+    "hazar-dekor-gri-30x60-parlak-75mm": "/images/varyant/hazar-dekor-gri-30x60-parlak-75mm.webp",
+    "hazar-kahve-30x60-parlak-75mm": "/images/varyant/hazar-kahve-30x60-parlak-75mm.webp",
+    "hazar-kahve-45x45-mat-75mm": "/images/varyant/hazar-kahve-45x45-mat-75mm.webp",
+    "hazar-koyu-gri-30x60-parlak-75mm": "/images/varyant/hazar-koyu-gri-30x60-parlak-75mm.webp",
+    "hazar-koyu-gri-45x45-mat-75mm": "/images/varyant/hazar-koyu-gri-45x45-mat-75mm.webp"
+  },
+  "royal": {
+    "royal-acik-gri-30x60-parlak-75mm": "/images/varyant/royal-acik-gri-30x60-parlak-75mm.webp",
+    "royal-acik-gri-45x45-mat-75mm": "/images/varyant/royal-acik-gri-45x45-mat-75mm.webp",
+    "royal-bej-30x60-parlak-75mm": "/images/varyant/royal-bej-30x60-parlak-75mm.webp",
+    "royal-bej-45x45-mat-75mm": "/images/varyant/royal-bej-45x45-mat-75mm.webp",
+    "royal-kahve-30x60-parlak-75mm": "/images/varyant/royal-kahve-30x60-parlak-75mm.webp",
+    "royal-kahve-45x45-mat-75mm": "/images/varyant/royal-kahve-45x45-mat-75mm.webp",
+    "royal-koyu-gri-30x60-parlak-75mm": "/images/varyant/royal-koyu-gri-30x60-parlak-75mm.webp",
+    "royal-koyu-gri-45x45-mat-75mm": "/images/varyant/royal-koyu-gri-45x45-mat-75mm.webp"
+  },
+  "paros": {
+    "paros-bej-45x45-parlak-75mm": "/images/varyant/paros-bej-45x45-parlak-75mm.webp",
+    "paros-beyaz-45x45-parlak-75mm": "/images/varyant/paros-beyaz-45x45-parlak-75mm.webp"
+  },
+  "rodos": {
+    "rodos-lime-45x45-parlak-75mm": "/images/varyant/rodos-lime-45x45-parlak-75mm.webp"
+  },
+  "datca": {
+    "datca-acik-bej-60x60-mat-9mm": "/images/varyant/datca-acik-bej-60x60-mat-9mm.webp",
+    "datca-acik-gri-60x60-mat-9mm": "/images/varyant/datca-acik-gri-60x60-mat-9mm.webp"
+  },
+  "spider": {
+    "spider-bej-60x60-full-lappato-9mm": "/images/varyant/spider-bej-60x60-full-lappato-9mm.webp",
+    "spider-beyaz-60x60-full-lappato-9mm": "/images/varyant/spider-beyaz-60x60-full-lappato-9mm.webp",
+    "spider-kahve-60x60-full-lappato-9mm": "/images/varyant/spider-kahve-60x60-full-lappato-9mm.webp",
+    "spider-siyah-60x60-full-lappato-9mm": "/images/varyant/spider-siyah-60x60-full-lappato-9mm.webp"
+  },
+  "meram": {
+    "meram-bej-60x60-mat-9mm": "/images/varyant/meram-bej-60x60-mat-9mm.webp"
+  },
+  "sandmar": {
+    "sandmar-gri-60x60-mat-9mm": "/images/varyant/sandmar-gri-60x60-mat-9mm.webp"
+  },
+  "athena": {
+    "athena-bej-30x60-parlak-75mm": "/images/varyant/athena-bej-30x60-parlak-75mm.webp",
+    "athena-bej-45x45-parlak-75mm": "/images/varyant/athena-bej-45x45-parlak-75mm.webp",
+    "athena-bej-30x90-parlak-9mm": "/images/varyant/athena-bej-30x90-parlak-9mm.webp",
+    "athena-bej-60x60-full-lappato-9mm": "/images/varyant/athena-bej-60x60-full-lappato-9mm.webp",
+    "athena-bej-45x90-full-lappato-9mm": "/images/varyant/athena-bej-45x90-full-lappato-9mm.webp",
+    "athena-bej-60x120-full-lappato-9mm": "/images/varyant/athena-bej-60x120-full-lappato-9mm.webp",
+    "athena-gri-30x60-parlak-75mm": "/images/varyant/athena-gri-30x60-parlak-75mm.webp",
+    "athena-gri-45x45-parlak-75mm": "/images/varyant/athena-gri-45x45-parlak-75mm.webp",
+    "athena-gri-30x90-parlak-9mm": "/images/varyant/athena-gri-30x90-parlak-9mm.webp",
+    "athena-gri-60x60-full-lappato-9mm": "/images/varyant/athena-gri-60x60-full-lappato-9mm.webp",
+    "athena-gri-45x90-full-lappato-9mm": "/images/varyant/athena-gri-45x90-full-lappato-9mm.webp",
+    "athena-gri-60x120-full-lappato-9mm": "/images/varyant/athena-gri-60x120-full-lappato-9mm.webp",
+    "athena-nergis-bej-30x90-parlak-9mm": "/images/varyant/athena-nergis-bej-30x90-parlak-9mm.webp",
+    "athena-nergis-gri-30x90-parlak-9mm": "/images/varyant/athena-nergis-gri-30x90-parlak-9mm.webp"
+  },
+  "ayazma": {
+    "ayazma-acik-gri-30x60-parlak-75mm": "/images/varyant/ayazma-acik-gri-30x60-parlak-75mm.webp",
+    "ayazma-acik-gri-45x45-mat-75mm": "/images/varyant/ayazma-acik-gri-45x45-mat-75mm.webp",
+    "ayazma-acik-gri-30x90-parlak-9mm": "/images/varyant/ayazma-acik-gri-30x90-parlak-9mm.webp",
+    "ayazma-acik-gri-60x60-mat-9mm": "/images/varyant/ayazma-acik-gri-60x60-mat-9mm.webp",
+    "ayazma-acik-gri-60x120-mat-9mm": "/images/varyant/ayazma-acik-gri-60x120-mat-9mm.webp",
+    "ayazma-bej-30x60-parlak-75mm": "/images/varyant/ayazma-bej-30x60-parlak-75mm.webp",
+    "ayazma-bej-45x45-mat-75mm": "/images/varyant/ayazma-bej-45x45-mat-75mm.webp",
+    "ayazma-bej-30x90-parlak-9mm": "/images/varyant/ayazma-bej-30x90-parlak-9mm.webp",
+    "ayazma-bej-60x60-mat-9mm": "/images/varyant/ayazma-bej-60x60-mat-9mm.webp",
+    "ayazma-bej-60x120-mat-9mm": "/images/varyant/ayazma-bej-60x120-mat-9mm.webp",
+    "ayazma-beyaz-30x60-parlak-75mm": "/images/varyant/ayazma-beyaz-30x60-parlak-75mm.webp",
+    "ayazma-beyaz-45x45-mat-75mm": "/images/varyant/ayazma-beyaz-45x45-mat-75mm.webp",
+    "ayazma-beyaz-30x90-parlak-9mm": "/images/varyant/ayazma-beyaz-30x90-parlak-9mm.webp",
+    "ayazma-beyaz-60x60-mat-9mm": "/images/varyant/ayazma-beyaz-60x60-mat-9mm.webp",
+    "ayazma-beyaz-60x120-mat-9mm": "/images/varyant/ayazma-beyaz-60x120-mat-9mm.webp",
+    "ayazma-beyaz-60x60-full-lappato-9mm": "/images/varyant/ayazma-beyaz-60x60-full-lappato-9mm.webp",
+    "ayazma-dekor-bej-30x60-parlak-75mm": "/images/varyant/ayazma-dekor-bej-30x60-parlak-75mm.webp",
+    "ayazma-dekor-gri-30x60-parlak-75mm": "/images/varyant/ayazma-dekor-gri-30x60-parlak-75mm.webp",
+    "ayazma-dekor-siyah-30x60-parlak-75mm": "/images/varyant/ayazma-dekor-siyah-30x60-parlak-75mm.webp",
+    "ayazma-kahve-30x60-parlak-75mm": "/images/varyant/ayazma-kahve-30x60-parlak-75mm.webp",
+    "ayazma-kahve-45x45-mat-75mm": "/images/varyant/ayazma-kahve-45x45-mat-75mm.webp",
+    "ayazma-kahve-30x90-parlak-9mm": "/images/varyant/ayazma-kahve-30x90-parlak-9mm.webp",
+    "ayazma-koyu-gri-30x60-parlak-75mm": "/images/varyant/ayazma-koyu-gri-30x60-parlak-75mm.webp",
+    "ayazma-koyu-gri-45x45-mat-75mm": "/images/varyant/ayazma-koyu-gri-45x45-mat-75mm.webp",
+    "ayazma-koyu-gri-30x90-parlak-9mm": "/images/varyant/ayazma-koyu-gri-30x90-parlak-9mm.webp",
+    "ayazma-siyah-30x60-parlak-75mm": "/images/varyant/ayazma-siyah-30x60-parlak-75mm.webp",
+    "ayazma-siyah-45x45-mat-75mm": "/images/varyant/ayazma-siyah-45x45-mat-75mm.webp",
+    "ayazma-siyah-30x90-parlak-9mm": "/images/varyant/ayazma-siyah-30x90-parlak-9mm.webp"
+  },
+  "calacatta": {
+    "calacatta-gold-60x60-full-lappato-9mm": "/images/varyant/calacatta-gold-60x60-full-lappato-9mm.webp",
+    "calacatta-marmi-60x60-full-lappato-9mm": "/images/varyant/calacatta-marmi-60x60-full-lappato-9mm.webp"
+  },
+  "marmo": {
+    "marmo-calca-60x60-mat-9mm": "/images/varyant/marmo-calca-60x60-mat-9mm.webp",
+    "marmo-calca-60x120-mat-9mm": "/images/varyant/marmo-calca-60x120-mat-9mm.webp",
+    "marmo-calca-60x60-full-lappato-9mm": "/images/varyant/marmo-calca-60x60-full-lappato-9mm.webp",
+    "marmo-calca-60x120-full-lappato-9mm": "/images/varyant/marmo-calca-60x120-full-lappato-9mm.webp",
+    "marmo-carra-60x60-mat-9mm": "/images/varyant/marmo-carra-60x60-mat-9mm.webp",
+    "marmo-carra-60x60-full-lappato-9mm": "/images/varyant/marmo-carra-60x60-full-lappato-9mm.webp",
+    "marmo-carra-60x120-full-lappato-9mm": "/images/varyant/marmo-carra-60x120-full-lappato-9mm.webp"
+  },
+  "milet": {
+    "milet-gri-60x60-mat-9mm": "/images/varyant/milet-gri-60x60-mat-9mm.webp",
+    "milet-gri-60x120-mat-9mm": "/images/varyant/milet-gri-60x120-mat-9mm.webp",
+    "milet-gri-60x60-full-lappato-9mm": "/images/varyant/milet-gri-60x60-full-lappato-9mm.webp",
+    "milet-gri-60x120-full-lappato-9mm": "/images/varyant/milet-gri-60x120-full-lappato-9mm.webp",
+    "milet-gri-satinato-60x120-mat-9mm": "/images/varyant/milet-gri-satinato-60x120-mat-9mm.webp"
+  },
+  "nepal": {
+    "nepal-bej-60x60-mat-9mm": "/images/varyant/nepal-bej-60x60-mat-9mm.webp",
+    "nepal-bej-60x60-full-lappato-9mm": "/images/varyant/nepal-bej-60x60-full-lappato-9mm.webp",
+    "nepal-bej-45x90-full-lappato-9mm": "/images/varyant/nepal-bej-45x90-full-lappato-9mm.webp",
+    "nepal-bej-60x120-full-lappato-9mm": "/images/varyant/nepal-bej-60x120-full-lappato-9mm.webp",
+    "nepal-gri-60x60-mat-9mm": "/images/varyant/nepal-gri-60x60-mat-9mm.webp",
+    "nepal-gri-60x60-full-lappato-9mm": "/images/varyant/nepal-gri-60x60-full-lappato-9mm.webp",
+    "nepal-gri-45x90-full-lappato-9mm": "/images/varyant/nepal-gri-45x90-full-lappato-9mm.webp",
+    "nepal-gri-60x120-full-lappato-9mm": "/images/varyant/nepal-gri-60x120-full-lappato-9mm.webp"
+  },
+  "river": {
+    "river-beyaz-60x60-full-lappato-9mm": "/images/varyant/river-beyaz-60x60-full-lappato-9mm.webp",
+    "river-beyaz-45x90-full-lappato-9mm": "/images/varyant/river-beyaz-45x90-full-lappato-9mm.webp",
+    "river-beyaz-60x120-full-lappato-9mm": "/images/varyant/river-beyaz-60x120-full-lappato-9mm.webp",
+    "river-dekor-45x90-full-lappato-9mm": "/images/varyant/river-dekor-45x90-full-lappato-9mm.webp",
+    "river-karbon-siyah-60x120-full-lappato-9mm": "/images/varyant/river-karbon-siyah-60x120-full-lappato-9mm.webp",
+    "river-siyah-60x60-full-lappato-9mm": "/images/varyant/river-siyah-60x60-full-lappato-9mm.webp",
+    "river-siyah-45x90-full-lappato-9mm": "/images/varyant/river-siyah-45x90-full-lappato-9mm.webp"
+  },
+  "napoli": {
+    "napoli-karbon-siyah-60x120-full-lappato-9mm": "/images/varyant/napoli-karbon-siyah-60x120-full-lappato-9mm.webp"
+  },
+  "nevada": {
+    "nevada-beyaz-60x120-full-lappato-9mm": "/images/varyant/nevada-beyaz-60x120-full-lappato-9mm.webp",
+    "nevada-karbon-siyah-60x120-full-lappato-9mm": "/images/varyant/nevada-karbon-siyah-60x120-full-lappato-9mm.webp"
+  },
+  "nil": {
+    "nil-bej-60x120-full-lappato-9mm": "/images/varyant/nil-bej-60x120-full-lappato-9mm.webp",
+    "nil-gri-60x120-full-lappato-9mm": "/images/varyant/nil-gri-60x120-full-lappato-9mm.webp"
+  },
+  "straton": {
+    "straton-gold-60x120-full-lappato-75mm": "/images/varyant/straton-gold-60x120-full-lappato-75mm.webp"
+  },
+  "gordion": {
+    "gordion-beyaz-60x120-full-lappato-75mm": "/images/varyant/gordion-beyaz-60x120-full-lappato-75mm.webp"
+  },
+  "leodikya": {
+    "leodikya-gri-60x120-full-lappato-75mm": "/images/varyant/leodikya-gri-60x120-full-lappato-75mm.webp"
+  },
+  "leton": {
+    "leton-bej-60x120-full-lappato-75mm": "/images/varyant/leton-bej-60x120-full-lappato-75mm.webp",
+    "leton-gri-60x120-full-lappato-75mm": "/images/varyant/leton-gri-60x120-full-lappato-75mm.webp"
+  },
+  "maydos": {
+    "maydos-bej-60x120-full-lappato-75mm": "/images/varyant/maydos-bej-60x120-full-lappato-75mm.webp",
+    "maydos-gri-60x120-full-lappato-75mm": "/images/varyant/maydos-gri-60x120-full-lappato-75mm.webp"
+  },
+  "fortis": {
+    "fortis-acik-gri-60x120-full-lappato-75mm": "/images/varyant/fortis-acik-gri-60x120-full-lappato-75mm.webp",
+    "fortis-siyah-60x120-full-lappato-75mm": "/images/varyant/fortis-siyah-60x120-full-lappato-75mm.webp"
+  },
+  "milas": {
+    "milas-bej-45x45-mat-75mm": "/images/varyant/milas-bej-45x45-mat-75mm.webp",
+    "milas-gri-45x45-mat-75mm": "/images/varyant/milas-gri-45x45-mat-75mm.webp",
+    "milas-taba-45x45-mat-75mm": "/images/varyant/milas-taba-45x45-mat-75mm.webp"
+  },
+  "cakil-tasi": {
+    "cakil-tasi-cakil-tasi-45x45-mat-75mm": "/images/varyant/cakil-tasi-cakil-tasi-45x45-mat-75mm.webp"
+  },
+  "belgium-stone": {
+    "belgium-stone-beyaz-60x120-mat-9mm": "/images/varyant/belgium-stone-beyaz-60x120-mat-9mm.webp",
+    "belgium-stone-bone-60x120-mat-9mm": "/images/varyant/belgium-stone-bone-60x120-mat-9mm.webp",
+    "belgium-stone-siyah-60x60-mat-9mm": "/images/varyant/belgium-stone-siyah-60x60-mat-9mm.webp"
+  },
+  "granit": {
+    "granit-bej-60x60-full-lappato-9mm": "/images/varyant/granit-bej-60x60-full-lappato-9mm.webp",
+    "granit-gri-60x60-full-lappato-9mm": "/images/varyant/granit-gri-60x60-full-lappato-9mm.webp"
+  },
+  "patara": {
+    "patara-kahve-45x45-mat-75mm": "/images/varyant/patara-kahve-45x45-mat-75mm.webp"
+  },
+  "oxide": {
+    "oxide-antrasit-60x60-semi-lappato-9mm": "/images/varyant/oxide-antrasit-60x60-semi-lappato-9mm.webp",
+    "oxide-antrasit-60x120-semi-lappato-9mm": "/images/varyant/oxide-antrasit-60x120-semi-lappato-9mm.webp",
+    "oxide-cobalt-60x60-semi-lappato-9mm": "/images/varyant/oxide-cobalt-60x60-semi-lappato-9mm.webp",
+    "oxide-cobalt-60x120-semi-lappato-9mm": "/images/varyant/oxide-cobalt-60x120-semi-lappato-9mm.webp",
+    "oxide-sky-60x60-semi-lappato-9mm": "/images/varyant/oxide-sky-60x60-semi-lappato-9mm.webp",
+    "oxide-sky-60x120-semi-lappato-9mm": "/images/varyant/oxide-sky-60x120-semi-lappato-9mm.webp",
+    "oxide-turkuaz-60x60-semi-lappato-9mm": "/images/varyant/oxide-turkuaz-60x60-semi-lappato-9mm.webp",
+    "oxide-turkuaz-60x120-semi-lappato-9mm": "/images/varyant/oxide-turkuaz-60x120-semi-lappato-9mm.webp"
+  },
+  "stone-blast": {
+    "stone-blast-antrasit-60x60-blast-9mm": "/images/varyant/stone-blast-antrasit-60x60-blast-9mm.webp",
+    "stone-blast-bone-60x60-blast-9mm": "/images/varyant/stone-blast-bone-60x60-blast-9mm.webp",
+    "stone-blast-bone-60x120-blast-9mm": "/images/varyant/stone-blast-bone-60x120-blast-9mm.webp",
+    "stone-blast-grey-60x120-blast-9mm": "/images/varyant/stone-blast-grey-60x120-blast-9mm.webp",
+    "stone-blast-gri-60x60-blast-9mm": "/images/varyant/stone-blast-gri-60x60-blast-9mm.webp",
+    "stone-blast-koyu-gri-60x60-blast-9mm": "/images/varyant/stone-blast-koyu-gri-60x60-blast-9mm.webp"
+  },
+  "petra": {
+    "petra-bej-60x60-mat-9mm": "/images/varyant/petra-bej-60x60-mat-9mm.webp",
+    "petra-gri-60x60-mat-9mm": "/images/varyant/petra-gri-60x60-mat-9mm.webp",
+    "petra-noche-60x60-mat-9mm": "/images/varyant/petra-noche-60x60-mat-9mm.webp"
+  },
+  "troya": {
+    "troya-bej-60x60-mat-9mm": "/images/varyant/troya-bej-60x60-mat-9mm.webp",
+    "troya-gri-60x60-mat-9mm": "/images/varyant/troya-gri-60x60-mat-9mm.webp"
+  },
+  "naya": {
+    "naya-antrasit-60x60-mat-9mm": "/images/varyant/naya-antrasit-60x60-mat-9mm.webp",
+    "naya-antrasit-45x90-mat-9mm": "/images/varyant/naya-antrasit-45x90-mat-9mm.webp",
+    "naya-bej-60x60-mat-9mm": "/images/varyant/naya-bej-60x60-mat-9mm.webp",
+    "naya-bej-45x90-mat-9mm": "/images/varyant/naya-bej-45x90-mat-9mm.webp"
+  },
+  "boston": {
+    "boston-antrasit-30x90-mat-9mm": "/images/varyant/boston-antrasit-30x90-mat-9mm.webp",
+    "boston-antrasit-dekor-30x90-mat-9mm": "/images/varyant/boston-antrasit-dekor-30x90-mat-9mm.webp",
+    "boston-acik-gri-30x90-mat-9mm": "/images/varyant/boston-acik-gri-30x90-mat-9mm.webp",
+    "boston-acik-gri-dekor-30x90-mat-9mm": "/images/varyant/boston-acik-gri-dekor-30x90-mat-9mm.webp",
+    "boston-taba-30x90-mat-9mm": "/images/varyant/boston-taba-30x90-mat-9mm.webp",
+    "boston-taba-dekor-30x90-mat-9mm": "/images/varyant/boston-taba-dekor-30x90-mat-9mm.webp"
+  },
+  "sorgun": {
+    "sorgun-bej-30x60-mat-75mm": "/images/varyant/sorgun-bej-30x60-mat-75mm.webp",
+    "sorgun-gri-30x60-mat-75mm": "/images/varyant/sorgun-gri-30x60-mat-75mm.webp",
+    "sorgun-kahve-30x60-mat-75mm": "/images/varyant/sorgun-kahve-30x60-mat-75mm.webp",
+    "sorgun-krem-30x60-mat-75mm": "/images/varyant/sorgun-krem-30x60-mat-75mm.webp"
+  },
+  "gravel": {
+    "gravel-bone-60x120-mat-75mm": "/images/varyant/gravel-bone-60x120-mat-75mm.webp",
+    "gravel-pearl-60x120-mat-75mm": "/images/varyant/gravel-pearl-60x120-mat-75mm.webp",
+    "gravel-pure-60x120-mat-75mm": "/images/varyant/gravel-pure-60x120-mat-75mm.webp"
+  },
+  "pebble": {
+    "pebble-bone-60x120-mat-75mm": "/images/varyant/pebble-bone-60x120-mat-75mm.webp",
+    "pebble-pearl-60x120-mat-75mm": "/images/varyant/pebble-pearl-60x120-mat-75mm.webp",
+    "pebble-pure-60x120-mat-75mm": "/images/varyant/pebble-pure-60x120-mat-75mm.webp"
+  },
+  "sand": {
+    "sand-bone-60x120-mat-75mm": "/images/varyant/sand-bone-60x120-mat-75mm.webp",
+    "sand-pearl-60x120-mat-75mm": "/images/varyant/sand-pearl-60x120-mat-75mm.webp",
+    "sand-pure-60x120-mat-75mm": "/images/varyant/sand-pure-60x120-mat-75mm.webp"
+  },
+  "atmos": {
+    "atmos-beyaz-60x120-mat-9mm": "/images/varyant/atmos-beyaz-60x120-mat-9mm.webp",
+    "atmos-bone-60x120-mat-9mm": "/images/varyant/atmos-bone-60x120-mat-9mm.webp",
+    "atmos-graphite-60x120-mat-9mm": "/images/varyant/atmos-graphite-60x120-mat-9mm.webp",
+    "atmos-silver-60x120-mat-9mm": "/images/varyant/atmos-silver-60x120-mat-9mm.webp"
+  },
+  "agrea": {
+    "agrea-antrasit-60x120-mat-9mm": "/images/varyant/agrea-antrasit-60x120-mat-9mm.webp",
+    "agrea-beyaz-60x120-mat-9mm": "/images/varyant/agrea-beyaz-60x120-mat-9mm.webp",
+    "agrea-bone-60x120-mat-9mm": "/images/varyant/agrea-bone-60x120-mat-9mm.webp"
+  },
+  "antares": {
+    "antares-siyah-60x120-mat-9mm": "/images/varyant/antares-siyah-60x120-mat-9mm.webp",
+    "antares-siyah-dekor-60x120-mat-9mm": "/images/varyant/antares-siyah-dekor-60x120-mat-9mm.webp"
+  },
+  "best": {
+    "best-ceppo-bone-60x120-mat-9mm": "/images/varyant/best-ceppo-bone-60x120-mat-9mm.webp",
+    "best-ceppo-krem-60x120-mat-9mm": "/images/varyant/best-ceppo-krem-60x120-mat-9mm.webp",
+    "best-ceppo-pearl-60x120-mat-9mm": "/images/varyant/best-ceppo-pearl-60x120-mat-9mm.webp",
+    "best-ceppo-pure-60x120-mat-9mm": "/images/varyant/best-ceppo-pure-60x120-mat-9mm.webp",
+    "best-ceppo-tarmac-60x120-mat-9mm": "/images/varyant/best-ceppo-tarmac-60x120-mat-9mm.webp",
+    "best-mix-bone-60x120-mat-9mm": "/images/varyant/best-mix-bone-60x120-mat-9mm.webp",
+    "best-mix-krem-60x120-mat-9mm": "/images/varyant/best-mix-krem-60x120-mat-9mm.webp",
+    "best-mix-pearl-60x120-mat-9mm": "/images/varyant/best-mix-pearl-60x120-mat-9mm.webp",
+    "best-mix-pure-60x120-mat-9mm": "/images/varyant/best-mix-pure-60x120-mat-9mm.webp",
+    "best-mix-tarmac-60x120-mat-9mm": "/images/varyant/best-mix-tarmac-60x120-mat-9mm.webp",
+    "best-panwall-bone-60x120-mat-9mm": "/images/varyant/best-panwall-bone-60x120-mat-9mm.webp",
+    "best-panwall-krem-60x120-mat-9mm": "/images/varyant/best-panwall-krem-60x120-mat-9mm.webp",
+    "best-panwall-pearly-60x120-mat-9mm": "/images/varyant/best-panwall-pearly-60x120-mat-9mm.webp",
+    "best-panwall-pure-60x120-mat-9mm": "/images/varyant/best-panwall-pure-60x120-mat-9mm.webp",
+    "best-panwall-tarmac-60x120-mat-9mm": "/images/varyant/best-panwall-tarmac-60x120-mat-9mm.webp",
+    "best-silence-bone-60x120-mat-9mm": "/images/varyant/best-silence-bone-60x120-mat-9mm.webp",
+    "best-silence-krem-60x120-mat-9mm": "/images/varyant/best-silence-krem-60x120-mat-9mm.webp",
+    "best-silence-pearl-60x120-mat-9mm": "/images/varyant/best-silence-pearl-60x120-mat-9mm.webp",
+    "best-silence-pure-60x120-mat-9mm": "/images/varyant/best-silence-pure-60x120-mat-9mm.webp",
+    "best-silence-tarmac-60x120-mat-9mm": "/images/varyant/best-silence-tarmac-60x120-mat-9mm.webp",
+    "best-silence-whale-60x120-mat-9mm": "/images/varyant/best-silence-whale-60x120-mat-9mm.webp",
+    "best-stone-bone-60x120-mat-9mm": "/images/varyant/best-stone-bone-60x120-mat-9mm.webp",
+    "best-stone-krem-60x120-mat-9mm": "/images/varyant/best-stone-krem-60x120-mat-9mm.webp",
+    "best-stone-pearl-60x120-mat-9mm": "/images/varyant/best-stone-pearl-60x120-mat-9mm.webp",
+    "best-stone-pure-60x120-mat-9mm": "/images/varyant/best-stone-pure-60x120-mat-9mm.webp",
+    "best-stone-tarmac-60x120-mat-9mm": "/images/varyant/best-stone-tarmac-60x120-mat-9mm.webp"
+  },
+  "bluestone": {
+    "bluestone-mavi-60x120-full-lappato-9mm": "/images/varyant/bluestone-mavi-60x120-full-lappato-9mm.webp"
+  },
+  "terazzo": {
+    "terazzo-antrasit-60x120-mat-9mm": "/images/varyant/terazzo-antrasit-60x120-mat-9mm.webp",
+    "terazzo-antrasit-dekor-60x120-mat-9mm": "/images/varyant/terazzo-antrasit-dekor-60x120-mat-9mm.webp",
+    "terazzo-antrasit-geo-dekor-60x120-mat-9mm": "/images/varyant/terazzo-antrasit-geo-dekor-60x120-mat-9mm.webp",
+    "terazzo-acik-gri-60x120-mat-9mm": "/images/varyant/terazzo-acik-gri-60x120-mat-9mm.webp",
+    "terazzo-acik-gri-dekor-60x120-mat-9mm": "/images/varyant/terazzo-acik-gri-dekor-60x120-mat-9mm.webp",
+    "terazzo-bej-60x120-mat-9mm": "/images/varyant/terazzo-bej-60x120-mat-9mm.webp",
+    "terazzo-bej-dekor-60x120-mat-9mm": "/images/varyant/terazzo-bej-dekor-60x120-mat-9mm.webp"
+  },
+  "cementino": {
+    "cementino-acik-gri-60x60-mat-9mm": "/images/varyant/cementino-acik-gri-60x60-mat-9mm.webp",
+    "cementino-acik-gri-80x80-mat-9mm": "/images/varyant/cementino-acik-gri-80x80-mat-9mm.webp",
+    "cementino-acik-gri-60x120-mat-9mm": "/images/varyant/cementino-acik-gri-60x120-mat-9mm.webp",
+    "cementino-acik-gri-60x60-full-lappato-9mm": "/images/varyant/cementino-acik-gri-60x60-full-lappato-9mm.webp",
+    "cementino-acik-gri-60x120-full-lappato-9mm": "/images/varyant/cementino-acik-gri-60x120-full-lappato-9mm.webp",
+    "cementino-acik-gri-60x120-semi-lappato-9mm": "/images/varyant/cementino-acik-gri-60x120-semi-lappato-9mm.webp",
+    "cementino-beyaz-60x60-mat-9mm": "/images/varyant/cementino-beyaz-60x60-mat-9mm.webp",
+    "cementino-beyaz-80x80-mat-9mm": "/images/varyant/cementino-beyaz-80x80-mat-9mm.webp",
+    "cementino-beyaz-60x120-mat-9mm": "/images/varyant/cementino-beyaz-60x120-mat-9mm.webp",
+    "cementino-beyaz-60x60-full-lappato-9mm": "/images/varyant/cementino-beyaz-60x60-full-lappato-9mm.webp",
+    "cementino-beyaz-60x120-full-lappato-9mm": "/images/varyant/cementino-beyaz-60x120-full-lappato-9mm.webp",
+    "cementino-beyaz-60x120-semi-lappato-9mm": "/images/varyant/cementino-beyaz-60x120-semi-lappato-9mm.webp",
+    "cementino-blast-acik-gri-30x90-blast-9mm": "/images/varyant/cementino-blast-acik-gri-30x90-blast-9mm.webp",
+    "cementino-blast-acik-gri-60x60-blast-9mm": "/images/varyant/cementino-blast-acik-gri-60x60-blast-9mm.webp",
+    "cementino-blast-acik-gri-60x120-blast-9mm": "/images/varyant/cementino-blast-acik-gri-60x120-blast-9mm.webp",
+    "cementino-blast-beyaz-30x90-blast-9mm": "/images/varyant/cementino-blast-beyaz-30x90-blast-9mm.webp",
+    "cementino-blast-beyaz-60x60-blast-9mm": "/images/varyant/cementino-blast-beyaz-60x60-blast-9mm.webp",
+    "cementino-blast-beyaz-60x120-blast-9mm": "/images/varyant/cementino-blast-beyaz-60x120-blast-9mm.webp",
+    "cementino-blast-bone-30x90-blast-9mm": "/images/varyant/cementino-blast-bone-30x90-blast-9mm.webp",
+    "cementino-blast-bone-60x60-blast-9mm": "/images/varyant/cementino-blast-bone-60x60-blast-9mm.webp",
+    "cementino-blast-bone-60x120-blast-9mm": "/images/varyant/cementino-blast-bone-60x120-blast-9mm.webp",
+    "cementino-blast-geo-dekor-60x120-blast-9mm": "/images/varyant/cementino-blast-geo-dekor-60x120-blast-9mm.webp",
+    "cementino-blast-graphite-60x120-blast-9mm": "/images/varyant/cementino-blast-graphite-60x120-blast-9mm.webp",
+    "cementino-blast-greige-30x90-blast-9mm": "/images/varyant/cementino-blast-greige-30x90-blast-9mm.webp",
+    "cementino-blast-greige-60x60-blast-9mm": "/images/varyant/cementino-blast-greige-60x60-blast-9mm.webp",
+    "cementino-blast-greige-60x120-blast-9mm": "/images/varyant/cementino-blast-greige-60x120-blast-9mm.webp",
+    "cementino-blast-ivory-30x90-blast-9mm": "/images/varyant/cementino-blast-ivory-30x90-blast-9mm.webp",
+    "cementino-blast-ivory-60x60-blast-9mm": "/images/varyant/cementino-blast-ivory-60x60-blast-9mm.webp",
+    "cementino-blast-ivory-60x120-blast-9mm": "/images/varyant/cementino-blast-ivory-60x120-blast-9mm.webp",
+    "cementino-blast-koyu-gri-30x90-blast-9mm": "/images/varyant/cementino-blast-koyu-gri-30x90-blast-9mm.webp",
+    "cementino-blast-koyu-gri-60x60-blast-9mm": "/images/varyant/cementino-blast-koyu-gri-60x60-blast-9mm.webp",
+    "cementino-blast-koyu-gri-60x120-blast-9mm": "/images/varyant/cementino-blast-koyu-gri-60x120-blast-9mm.webp",
+    "cementino-blast-taba-60x120-blast-9mm": "/images/varyant/cementino-blast-taba-60x120-blast-9mm.webp",
+    "cementino-bone-60x60-mat-9mm": "/images/varyant/cementino-bone-60x60-mat-9mm.webp",
+    "cementino-bone-80x80-mat-9mm": "/images/varyant/cementino-bone-80x80-mat-9mm.webp",
+    "cementino-bone-60x120-mat-9mm": "/images/varyant/cementino-bone-60x120-mat-9mm.webp",
+    "cementino-bone-60x60-full-lappato-9mm": "/images/varyant/cementino-bone-60x60-full-lappato-9mm.webp",
+    "cementino-bone-60x120-full-lappato-9mm": "/images/varyant/cementino-bone-60x120-full-lappato-9mm.webp",
+    "cementino-bone-60x120-semi-lappato-9mm": "/images/varyant/cementino-bone-60x120-semi-lappato-9mm.webp",
+    "cementino-geo-dekor-60x120-mat-9mm": "/images/varyant/cementino-geo-dekor-60x120-mat-9mm.webp",
+    "cementino-geo-dekor-60x60-full-lappato-9mm": "/images/varyant/cementino-geo-dekor-60x60-full-lappato-9mm.webp",
+    "cementino-geo-dekor-60x120-full-lappato-9mm": "/images/varyant/cementino-geo-dekor-60x120-full-lappato-9mm.webp",
+    "cementino-graphite-60x60-mat-9mm": "/images/varyant/cementino-graphite-60x60-mat-9mm.webp",
+    "cementino-graphite-60x120-mat-9mm": "/images/varyant/cementino-graphite-60x120-mat-9mm.webp",
+    "cementino-greige-60x60-mat-9mm": "/images/varyant/cementino-greige-60x60-mat-9mm.webp",
+    "cementino-greige-60x120-mat-9mm": "/images/varyant/cementino-greige-60x120-mat-9mm.webp",
+    "cementino-greige-60x60-full-lappato-9mm": "/images/varyant/cementino-greige-60x60-full-lappato-9mm.webp",
+    "cementino-greige-60x120-full-lappato-9mm": "/images/varyant/cementino-greige-60x120-full-lappato-9mm.webp"
+  },
+  "cerastone": {
+    "cerastone-antrasit-60x60-mat-9mm": "/images/varyant/cerastone-antrasit-60x60-mat-9mm.webp",
+    "cerastone-antrasit-60x120-mat-9mm": "/images/varyant/cerastone-antrasit-60x120-mat-9mm.webp",
+    "cerastone-bone-60x60-mat-9mm": "/images/varyant/cerastone-bone-60x60-mat-9mm.webp",
+    "cerastone-bone-60x120-mat-9mm": "/images/varyant/cerastone-bone-60x120-mat-9mm.webp",
+    "cerastone-gri-60x120-mat-9mm": "/images/varyant/cerastone-gri-60x120-mat-9mm.webp",
+    "cerastone-koyu-gri-60x60-mat-9mm": "/images/varyant/cerastone-koyu-gri-60x60-mat-9mm.webp",
+    "cerastone-koyu-gri-60x120-mat-9mm": "/images/varyant/cerastone-koyu-gri-60x120-mat-9mm.webp"
+  },
+  "horizon": {
+    "horizon-antrasit-60x60-mat-9mm": "/images/varyant/horizon-antrasit-60x60-mat-9mm.webp",
+    "horizon-antrasit-60x120-mat-9mm": "/images/varyant/horizon-antrasit-60x120-mat-9mm.webp",
+    "horizon-bej-60x60-mat-9mm": "/images/varyant/horizon-bej-60x60-mat-9mm.webp",
+    "horizon-bej-60x120-mat-9mm": "/images/varyant/horizon-bej-60x120-mat-9mm.webp",
+    "horizon-gri-60x60-mat-9mm": "/images/varyant/horizon-gri-60x60-mat-9mm.webp",
+    "horizon-gri-60x120-mat-9mm": "/images/varyant/horizon-gri-60x120-mat-9mm.webp",
+    "horizon-taba-60x60-mat-9mm": "/images/varyant/horizon-taba-60x60-mat-9mm.webp",
+    "horizon-taba-60x120-mat-9mm": "/images/varyant/horizon-taba-60x120-mat-9mm.webp"
+  },
+  "kreastone": {
+    "kreastone-antrasit-60x60-mat-9mm": "/images/varyant/kreastone-antrasit-60x60-mat-9mm.webp",
+    "kreastone-bej-60x60-mat-9mm": "/images/varyant/kreastone-bej-60x60-mat-9mm.webp",
+    "kreastone-gri-60x60-mat-9mm": "/images/varyant/kreastone-gri-60x60-mat-9mm.webp"
+  },
+  "molde": {
+    "molde-antrasit-45x45-mat-75mm": "/images/varyant/molde-antrasit-45x45-mat-75mm.webp",
+    "molde-antrasit-60x60-mat-9mm": "/images/varyant/molde-antrasit-60x60-mat-9mm.webp",
+    "molde-antrasit-60x120-mat-9mm": "/images/varyant/molde-antrasit-60x120-mat-9mm.webp",
+    "molde-acik-gri-45x45-mat-75mm": "/images/varyant/molde-acik-gri-45x45-mat-75mm.webp",
+    "molde-acik-gri-30x90-mat-9mm": "/images/varyant/molde-acik-gri-30x90-mat-9mm.webp",
+    "molde-acik-gri-60x60-mat-9mm": "/images/varyant/molde-acik-gri-60x60-mat-9mm.webp",
+    "molde-acik-gri-60x120-mat-9mm": "/images/varyant/molde-acik-gri-60x120-mat-9mm.webp",
+    "molde-gri-dekor-30x90-mat-9mm": "/images/varyant/molde-gri-dekor-30x90-mat-9mm.webp",
+    "molde-koyu-gri-45x45-mat-75mm": "/images/varyant/molde-koyu-gri-45x45-mat-75mm.webp",
+    "molde-koyu-gri-30x90-mat-9mm": "/images/varyant/molde-koyu-gri-30x90-mat-9mm.webp",
+    "molde-koyu-gri-60x60-mat-9mm": "/images/varyant/molde-koyu-gri-60x60-mat-9mm.webp",
+    "molde-koyu-gri-60x120-mat-9mm": "/images/varyant/molde-koyu-gri-60x120-mat-9mm.webp"
+  },
+  "town": {
+    "town-acik-gri-60x60-mat-9mm": "/images/varyant/town-acik-gri-60x60-mat-9mm.webp",
+    "town-bej-60x60-mat-9mm": "/images/varyant/town-bej-60x60-mat-9mm.webp"
+  },
+  "heraklion": {
+    "heraklion-acik-bej-45x45-mat-75mm": "/images/varyant/heraklion-acik-bej-45x45-mat-75mm.webp",
+    "heraklion-koyu-bej-45x45-mat-75mm": "/images/varyant/heraklion-koyu-bej-45x45-mat-75mm.webp"
+  },
+  "cemento": {
+    "cemento-rustik-beyaz-30x60-mat-75mm": "/images/varyant/cemento-rustik-beyaz-30x60-mat-75mm.webp",
+    "cemento-rustik-gri-30x60-mat-75mm": "/images/varyant/cemento-rustik-gri-30x60-mat-75mm.webp",
+    "cemento-rustik-koyu-gri-30x60-mat-75mm": "/images/varyant/cemento-rustik-koyu-gri-30x60-mat-75mm.webp",
+    "cemento-rustik-mix-dekor-30x60-mat-75mm": "/images/varyant/cemento-rustik-mix-dekor-30x60-mat-75mm.webp"
+  },
+  "tokio": {
+    "tokio-antrasit-60x120-mat-75mm": "/images/varyant/tokio-antrasit-60x120-mat-75mm.webp",
+    "tokio-gri-60x120-mat-75mm": "/images/varyant/tokio-gri-60x120-mat-75mm.webp",
+    "tokio-krem-60x120-mat-75mm": "/images/varyant/tokio-krem-60x120-mat-75mm.webp",
+    "tokio-smoke-60x120-mat-75mm": "/images/varyant/tokio-smoke-60x120-mat-75mm.webp"
+  },
+  "onix": {
+    "onix-bej-45x45-parlak-75mm": "/images/varyant/onix-bej-45x45-parlak-75mm.webp",
+    "onix-beyaz-45x45-parlak-75mm": "/images/varyant/onix-beyaz-45x45-parlak-75mm.webp"
+  },
+  "onice": {
+    "onice-bej-60x60-full-lappato-9mm": "/images/varyant/onice-bej-60x60-full-lappato-9mm.webp",
+    "onice-bej-45x90-full-lappato-9mm": "/images/varyant/onice-bej-45x90-full-lappato-9mm.webp",
+    "onice-bej-60x120-full-lappato-9mm": "/images/varyant/onice-bej-60x120-full-lappato-9mm.webp",
+    "onice-gri-60x60-full-lappato-9mm": "/images/varyant/onice-gri-60x60-full-lappato-9mm.webp",
+    "onice-gri-45x90-full-lappato-9mm": "/images/varyant/onice-gri-45x90-full-lappato-9mm.webp",
+    "onice-gri-60x120-full-lappato-9mm": "/images/varyant/onice-gri-60x120-full-lappato-9mm.webp"
+  },
+  "onice-moon": {
+    "onice-moon-60x60-full-lappato-9mm": "/images/varyant/onice-moon-60x60-full-lappato-9mm.webp",
+    "onice-moon-45x90-full-lappato-9mm": "/images/varyant/onice-moon-45x90-full-lappato-9mm.webp",
+    "onice-moon-60x120-full-lappato-9mm": "/images/varyant/onice-moon-60x120-full-lappato-9mm.webp"
+  },
+  "florida": {
+    "florida-turkuaz-60x120-full-lappato-75mm": "/images/varyant/florida-turkuaz-60x120-full-lappato-75mm.webp"
+  },
+  "paradise": {
+    "paradise-amazon-mavi-60x60-mat-9mm": "/images/varyant/paradise-amazon-mavi-60x60-mat-9mm.webp",
+    "paradise-amazon-mavi-45x90-mat-9mm": "/images/varyant/paradise-amazon-mavi-45x90-mat-9mm.webp",
+    "paradise-amazon-mavi-60x120-mat-9mm": "/images/varyant/paradise-amazon-mavi-60x120-mat-9mm.webp",
+    "paradise-amazon-mavi-60x60-full-lappato-9mm": "/images/varyant/paradise-amazon-mavi-60x60-full-lappato-9mm.webp",
+    "paradise-amazon-mavi-45x90-full-lappato-9mm": "/images/varyant/paradise-amazon-mavi-45x90-full-lappato-9mm.webp",
+    "paradise-amazon-mavi-60x120-full-lappato-9mm": "/images/varyant/paradise-amazon-mavi-60x120-full-lappato-9mm.webp",
+    "paradise-amethyst-60x60-mat-9mm": "/images/varyant/paradise-amethyst-60x60-mat-9mm.webp",
+    "paradise-amethyst-45x90-mat-9mm": "/images/varyant/paradise-amethyst-45x90-mat-9mm.webp",
+    "paradise-amethyst-60x120-mat-9mm": "/images/varyant/paradise-amethyst-60x120-mat-9mm.webp",
+    "paradise-amethyst-60x60-full-lappato-9mm": "/images/varyant/paradise-amethyst-60x60-full-lappato-9mm.webp",
+    "paradise-amethyst-45x90-full-lappato-9mm": "/images/varyant/paradise-amethyst-45x90-full-lappato-9mm.webp",
+    "paradise-amethyst-60x120-full-lappato-9mm": "/images/varyant/paradise-amethyst-60x120-full-lappato-9mm.webp",
+    "paradise-beyaz-60x120-full-lappato-9mm": "/images/varyant/paradise-beyaz-60x120-full-lappato-9mm.webp",
+    "paradise-krem-60x120-full-lappato-9mm": "/images/varyant/paradise-krem-60x120-full-lappato-9mm.webp",
+    "paradise-onyx-beyaz-60x120-full-lappato-9mm": "/images/varyant/paradise-onyx-beyaz-60x120-full-lappato-9mm.webp",
+    "paradise-onyx-krem-60x120-full-lappato-9mm": "/images/varyant/paradise-onyx-krem-60x120-full-lappato-9mm.webp",
+    "paradise-onyx-pembe-60x120-full-lappato-9mm": "/images/varyant/paradise-onyx-pembe-60x120-full-lappato-9mm.webp",
+    "paradise-onyx-rose-60x120-mat-9mm": "/images/varyant/paradise-onyx-rose-60x120-mat-9mm.webp",
+    "paradise-onyx-rose-60x120-full-lappato-9mm": "/images/varyant/paradise-onyx-rose-60x120-full-lappato-9mm.webp",
+    "paradise-parrot-papagan-dekor-1-45x90-mat-9mm": "/images/varyant/paradise-parrot-papagan-dekor-1-45x90-mat-9mm.webp",
+    "paradise-parrot-papagan-dekor-1-60x120-full-lappato-9mm": "/images/varyant/paradise-parrot-papagan-dekor-1-60x120-full-lappato-9mm.webp",
+    "paradise-parrot-papagan-dekor-1-60x120-semi-lappato-9mm": "/images/varyant/paradise-parrot-papagan-dekor-1-60x120-semi-lappato-9mm.webp",
+    "paradise-parrot-papagan-dekor-2-45x90-mat-9mm": "/images/varyant/paradise-parrot-papagan-dekor-2-45x90-mat-9mm.webp",
+    "paradise-parrot-papagan-dekor-2-60x120-full-lappato-9mm": "/images/varyant/paradise-parrot-papagan-dekor-2-60x120-full-lappato-9mm.webp",
+    "paradise-parrot-papagan-dekor-2-60x120-semi-lappato-9mm": "/images/varyant/paradise-parrot-papagan-dekor-2-60x120-semi-lappato-9mm.webp",
+    "paradise-pembe-60x120-full-lappato-9mm": "/images/varyant/paradise-pembe-60x120-full-lappato-9mm.webp",
+    "paradise-quarry-flower-dekor-1-60x120-semi-lappato-9mm": "/images/varyant/paradise-quarry-flower-dekor-1-60x120-semi-lappato-9mm.webp",
+    "paradise-quarry-flower-dekor-2-60x120-semi-lappato-9mm": "/images/varyant/paradise-quarry-flower-dekor-2-60x120-semi-lappato-9mm.webp",
+    "paradise-quarry-kahve-60x120-full-lappato-9mm": "/images/varyant/paradise-quarry-kahve-60x120-full-lappato-9mm.webp",
+    "paradise-quarry-mavi-dekor-1-60x120-semi-lappato-9mm": "/images/varyant/paradise-quarry-mavi-dekor-1-60x120-semi-lappato-9mm.webp",
+    "paradise-quarry-mavi-dekor-2-60x120-semi-lappato-9mm": "/images/varyant/paradise-quarry-mavi-dekor-2-60x120-semi-lappato-9mm.webp",
+    "paradise-rain-forest-green-60x60-mat-9mm": "/images/varyant/paradise-rain-forest-green-60x60-mat-9mm.webp",
+    "paradise-rain-forest-green-45x90-mat-9mm": "/images/varyant/paradise-rain-forest-green-45x90-mat-9mm.webp",
+    "paradise-rain-forest-green-60x120-mat-9mm": "/images/varyant/paradise-rain-forest-green-60x120-mat-9mm.webp",
+    "paradise-rain-forest-green-60x60-full-lappato-9mm": "/images/varyant/paradise-rain-forest-green-60x60-full-lappato-9mm.webp",
+    "paradise-rain-forest-green-45x90-full-lappato-9mm": "/images/varyant/paradise-rain-forest-green-45x90-full-lappato-9mm.webp",
+    "paradise-rain-forest-green-60x120-full-lappato-9mm": "/images/varyant/paradise-rain-forest-green-60x120-full-lappato-9mm.webp",
+    "paradise-rose-45x90-mat-9mm": "/images/varyant/paradise-rose-45x90-mat-9mm.webp",
+    "paradise-rose-onix-45x90-full-lappato-9mm": "/images/varyant/paradise-rose-onix-45x90-full-lappato-9mm.webp",
+    "paradise-rose-onyx-60x60-mat-9mm": "/images/varyant/paradise-rose-onyx-60x60-mat-9mm.webp",
+    "paradise-rose-onyx-60x60-full-lappato-9mm": "/images/varyant/paradise-rose-onyx-60x60-full-lappato-9mm.webp"
+  },
+  "scintilla": {
+    "scintilla-midnight-mavi-45x45-mat-85mm": "/images/varyant/scintilla-midnight-mavi-45x45-mat-85mm.webp",
+    "scintilla-night-siyah-45x45-mat-85mm": "/images/varyant/scintilla-night-siyah-45x45-mat-85mm.webp",
+    "scintilla-olive-yesil-45x45-mat-85mm": "/images/varyant/scintilla-olive-yesil-45x45-mat-85mm.webp",
+    "scintilla-paprika-turuncu-45x45-mat-85mm": "/images/varyant/scintilla-paprika-turuncu-45x45-mat-85mm.webp",
+    "scintilla-safir-mavi-45x45-mat-85mm": "/images/varyant/scintilla-safir-mavi-45x45-mat-85mm.webp",
+    "scintilla-siyah-45x45-mat-85mm": "/images/varyant/scintilla-siyah-45x45-mat-85mm.webp"
+  },
+  "siena": {
+    "siena-antrasit-60x60-mat-9mm": "/images/varyant/siena-antrasit-60x60-mat-9mm.webp",
+    "siena-antrasit-60x60-full-lappato-9mm": "/images/varyant/siena-antrasit-60x60-full-lappato-9mm.webp",
+    "siena-taba-60x60-mat-9mm": "/images/varyant/siena-taba-60x60-mat-9mm.webp",
+    "siena-taba-60x60-full-lappato-9mm": "/images/varyant/siena-taba-60x60-full-lappato-9mm.webp"
+  },
+  "verona": {
+    "verona-gri-45x45-mat-75mm": "/images/varyant/verona-gri-45x45-mat-75mm.webp"
+  },
+  "arya": {
+    "arya-gri-30x60-parlak-9mm": "/images/varyant/arya-gri-30x60-parlak-9mm.webp"
+  },
+  "brixton": {
+    "brixton-pre-cut-45x45-mat-85mm": "/images/varyant/brixton-pre-cut-45x45-mat-85mm.webp"
+  },
+  "bursa": {
+    "bursa-mavi-45x45-mat-85mm": "/images/varyant/bursa-mavi-45x45-mat-85mm.webp"
+  },
+  "brianna": {
+    "brianna-marina-45x45-mat-85mm": "/images/varyant/brianna-marina-45x45-mat-85mm.webp",
+    "brianna-rose-45x45-mat-85mm": "/images/varyant/brianna-rose-45x45-mat-85mm.webp"
+  },
+  "chateau": {
+    "chateau-blue-45x45-mat-85mm": "/images/varyant/chateau-blue-45x45-mat-85mm.webp",
+    "chateau-noir-45x45-mat-85mm": "/images/varyant/chateau-noir-45x45-mat-85mm.webp",
+    "chateau-rose-45x45-mat-85mm": "/images/varyant/chateau-rose-45x45-mat-85mm.webp",
+    "chateau-vert-45x45-mat-85mm": "/images/varyant/chateau-vert-45x45-mat-85mm.webp"
+  },
+  "dove-verona": {
+    "dove-verona-gri-45x45-mat-85mm": "/images/varyant/dove-verona-gri-45x45-mat-85mm.webp"
+  },
+  "dorset": {
+    "dorset-charcoal-siyah-45x45-mat-85mm": "/images/varyant/dorset-charcoal-siyah-45x45-mat-85mm.webp",
+    "dorset-gri-45x45-mat-85mm": "/images/varyant/dorset-gri-45x45-mat-85mm.webp",
+    "dorset-safir-mavi-45x45-mat-85mm": "/images/varyant/dorset-safir-mavi-45x45-mat-85mm.webp"
+  },
+  "durham": {
+    "durham-bej-45x45-mat-75mm": "/images/varyant/durham-bej-45x45-mat-75mm.webp",
+    "durham-gri-45x45-mat-75mm": "/images/varyant/durham-gri-45x45-mat-75mm.webp",
+    "durham-mavi-45x45-mat-75mm": "/images/varyant/durham-mavi-45x45-mat-75mm.webp"
+  },
+  "eagle": {
+    "eagle-45x45-mat-85mm": "/images/varyant/eagle-45x45-mat-85mm.webp"
+  },
+  "firenze": {
+    "firenze-gri-45x45-mat-85mm": "/images/varyant/firenze-gri-45x45-mat-85mm.webp",
+    "firenze-mavi-45x45-mat-85mm": "/images/varyant/firenze-mavi-45x45-mat-85mm.webp",
+    "firenze-siyah-45x45-mat-85mm": "/images/varyant/firenze-siyah-45x45-mat-85mm.webp",
+    "firenze-yesil-45x45-mat-85mm": "/images/varyant/firenze-yesil-45x45-mat-85mm.webp"
+  },
+  "ledbury": {
+    "ledbury-charcoal-siyah-45x45-mat-85mm": "/images/varyant/ledbury-charcoal-siyah-45x45-mat-85mm.webp",
+    "ledbury-marina-mavi-45x45-mat-85mm": "/images/varyant/ledbury-marina-mavi-45x45-mat-85mm.webp",
+    "ledbury-olive-yesil-45x45-mat-85mm": "/images/varyant/ledbury-olive-yesil-45x45-mat-85mm.webp",
+    "ledbury-powder-mavi-45x45-mat-85mm": "/images/varyant/ledbury-powder-mavi-45x45-mat-85mm.webp",
+    "ledbury-slate-gri-45x45-mat-85mm": "/images/varyant/ledbury-slate-gri-45x45-mat-85mm.webp"
+  },
+  "lisbone": {
+    "lisbone-british-yesil-siyah-45x45-mat-85mm": "/images/varyant/lisbone-british-yesil-siyah-45x45-mat-85mm.webp",
+    "lisbone-siyah-gri-45x45-mat-85mm": "/images/varyant/lisbone-siyah-gri-45x45-mat-85mm.webp",
+    "lisbone-soft-mavi-siyah-45x45-mat-85mm": "/images/varyant/lisbone-soft-mavi-siyah-45x45-mat-85mm.webp"
+  },
+  "milan": {
+    "milan-gri-45x45-mat-75mm": "/images/varyant/milan-gri-45x45-mat-75mm.webp",
+    "milan-gri-60x60-mat-9mm": "/images/varyant/milan-gri-60x60-mat-9mm.webp",
+    "milan-gri-60x60-full-lappato-9mm": "/images/varyant/milan-gri-60x60-full-lappato-9mm.webp"
+  },
+  "milton": {
+    "milton-bej-45x45-mat-85mm": "/images/varyant/milton-bej-45x45-mat-85mm.webp"
+  },
+  "venice": {
+    "venice-british-yesil-siyah-45x45-mat-85mm": "/images/varyant/venice-british-yesil-siyah-45x45-mat-85mm.webp",
+    "venice-mavi-45x45-mat-75mm": "/images/varyant/venice-mavi-45x45-mat-75mm.webp",
+    "venice-siyah-45x45-mat-75mm": "/images/varyant/venice-siyah-45x45-mat-75mm.webp",
+    "venice-sky-mavi-siyah-45x45-mat-85mm": "/images/varyant/venice-sky-mavi-siyah-45x45-mat-85mm.webp"
+  },
+  "duden": {
+    "duden-bej-30x60-parlak-9mm": "/images/varyant/duden-bej-30x60-parlak-9mm.webp",
+    "duden-beyaz-30x60-parlak-9mm": "/images/varyant/duden-beyaz-30x60-parlak-9mm.webp",
+    "duden-wenge-30x60-parlak-9mm": "/images/varyant/duden-wenge-30x60-parlak-9mm.webp"
+  },
+  "izmir": {
+    "izmir-beyaz-30x60-parlak-9mm": "/images/varyant/izmir-beyaz-30x60-parlak-9mm.webp"
+  },
+  "mese": {
+    "mese-bej-30x60-mat-75mm": "/images/varyant/mese-bej-30x60-mat-75mm.webp",
+    "mese-bej-20x120-mat-9mm": "/images/varyant/mese-bej-20x120-mat-9mm.webp",
+    "mese-bej-60x120-mat-9mm": "/images/varyant/mese-bej-60x120-mat-9mm.webp",
+    "mese-gri-20x120-mat-9mm": "/images/varyant/mese-gri-20x120-mat-9mm.webp",
+    "mese-gri-60x120-mat-9mm": "/images/varyant/mese-gri-60x120-mat-9mm.webp",
+    "mese-kahve-20x120-mat-9mm": "/images/varyant/mese-kahve-20x120-mat-9mm.webp",
+    "mese-kahve-60x120-mat-9mm": "/images/varyant/mese-kahve-60x120-mat-9mm.webp",
+    "mese-kizil-60x120-mat-9mm": "/images/varyant/mese-kizil-60x120-mat-9mm.webp",
+    "mese-wenge-20x120-mat-9mm": "/images/varyant/mese-wenge-20x120-mat-9mm.webp",
+    "mese-wenge-60x120-mat-9mm": "/images/varyant/mese-wenge-60x120-mat-9mm.webp"
+  },
+  "panwall": {
+    "panwall-antrasit-60x120-mat-9mm": "/images/varyant/panwall-antrasit-60x120-mat-9mm.webp",
+    "panwall-acik-bej-60x120-mat-9mm": "/images/varyant/panwall-acik-bej-60x120-mat-9mm.webp",
+    "panwall-ceviz-60x120-mat-9mm": "/images/varyant/panwall-ceviz-60x120-mat-9mm.webp",
+    "panwall-koyu-bej-60x120-mat-9mm": "/images/varyant/panwall-koyu-bej-60x120-mat-9mm.webp"
+  },
+  "sedir": {
+    "sedir-bej-45x90-mat-9mm": "/images/varyant/sedir-bej-45x90-mat-9mm.webp",
+    "sedir-bej-60x120-mat-9mm": "/images/varyant/sedir-bej-60x120-mat-9mm.webp",
+    "sedir-gri-45x90-mat-9mm": "/images/varyant/sedir-gri-45x90-mat-9mm.webp",
+    "sedir-gri-60x120-mat-9mm": "/images/varyant/sedir-gri-60x120-mat-9mm.webp",
+    "sedir-gri-mix-45x90-mat-9mm": "/images/varyant/sedir-gri-mix-45x90-mat-9mm.webp",
+    "sedir-kahve-60x120-mat-9mm": "/images/varyant/sedir-kahve-60x120-mat-9mm.webp",
+    "sedir-kahve-mix-45x90-mat-9mm": "/images/varyant/sedir-kahve-mix-45x90-mat-9mm.webp",
+    "sedir-mix-60x120-mat-9mm": "/images/varyant/sedir-mix-60x120-mat-9mm.webp"
+  },
+  "woodline": {
+    "woodline-beyaz-60x120-mat-9mm": "/images/varyant/woodline-beyaz-60x120-mat-9mm.webp"
+  },
+  "burgaz": {
+    "burgaz-bej-45x45-mat-75mm": "/images/varyant/burgaz-bej-45x45-mat-75mm.webp",
+    "burgaz-gri-45x45-mat-75mm": "/images/varyant/burgaz-gri-45x45-mat-75mm.webp"
+  },
+  "mersin": {
+    "mersin-bej-45x45-mat-75mm": "/images/varyant/mersin-bej-45x45-mat-75mm.webp",
+    "mersin-gri-45x45-mat-75mm": "/images/varyant/mersin-gri-45x45-mat-75mm.webp"
+  },
+  "parke": {
+    "parke-bej-45x45-mat-75mm": "/images/varyant/parke-bej-45x45-mat-75mm.webp",
+    "parke-bej-45x90-mat-9mm": "/images/varyant/parke-bej-45x90-mat-9mm.webp",
+    "parke-gri-45x45-mat-75mm": "/images/varyant/parke-gri-45x45-mat-75mm.webp",
+    "parke-gri-45x90-mat-9mm": "/images/varyant/parke-gri-45x90-mat-9mm.webp",
+    "parke-kahve-45x45-mat-75mm": "/images/varyant/parke-kahve-45x45-mat-75mm.webp",
+    "parke-kahve-45x90-mat-9mm": "/images/varyant/parke-kahve-45x90-mat-9mm.webp",
+    "parke-mavi-45x90-mat-9mm": "/images/varyant/parke-mavi-45x90-mat-9mm.webp"
+  },
+  "beldevere": {
+    "beldevere-oak-60x60-mat-9mm": "/images/varyant/beldevere-oak-60x60-mat-9mm.webp",
+    "beldevere-walnut-60x60-mat-9mm": "/images/varyant/beldevere-walnut-60x60-mat-9mm.webp",
+    "beldevere-wenge-60x60-mat-9mm": "/images/varyant/beldevere-wenge-60x60-mat-9mm.webp"
+  },
+  "forest": {
+    "forest-bej-60x60-mat-9mm": "/images/varyant/forest-bej-60x60-mat-9mm.webp",
+    "forest-gri-60x60-mat-9mm": "/images/varyant/forest-gri-60x60-mat-9mm.webp"
+  },
+  "teras": {
+    "teras-bej-60x60-mat-9mm": "/images/varyant/teras-bej-60x60-mat-9mm.webp",
+    "teras-gri-60x60-mat-9mm": "/images/varyant/teras-gri-60x60-mat-9mm.webp",
+    "teras-kahve-60x60-mat-9mm": "/images/varyant/teras-kahve-60x60-mat-9mm.webp"
+  },
+  "lapland": {
+    "lapland-parqued-brown-20x120-mat-9mm": "/images/varyant/lapland-parqued-brown-20x120-mat-9mm.webp"
+  },
+  "keten": {
+    "keten-acik-bej-45x45-mat-75mm": "/images/varyant/keten-acik-bej-45x45-mat-75mm.webp",
+    "keten-acik-bej-30x90-mat-9mm": "/images/varyant/keten-acik-bej-30x90-mat-9mm.webp",
+    "keten-acik-gri-45x45-mat-75mm": "/images/varyant/keten-acik-gri-45x45-mat-75mm.webp",
+    "keten-acik-gri-30x90-mat-9mm": "/images/varyant/keten-acik-gri-30x90-mat-9mm.webp",
+    "keten-bej-dekor-30x90-mat-9mm": "/images/varyant/keten-bej-dekor-30x90-mat-9mm.webp",
+    "keten-gri-dekor-30x90-mat-9mm": "/images/varyant/keten-gri-dekor-30x90-mat-9mm.webp",
+    "keten-koyu-bej-45x45-mat-75mm": "/images/varyant/keten-koyu-bej-45x45-mat-75mm.webp",
+    "keten-koyu-bej-30x90-mat-9mm": "/images/varyant/keten-koyu-bej-30x90-mat-9mm.webp",
+    "keten-koyu-gri-45x45-mat-75mm": "/images/varyant/keten-koyu-gri-45x45-mat-75mm.webp",
+    "keten-koyu-gri-30x90-mat-9mm": "/images/varyant/keten-koyu-gri-30x90-mat-9mm.webp"
+  },
+  "ocean": {
+    "ocean-mavi-30x60-mat-75mm": "/images/varyant/ocean-mavi-30x60-mat-75mm.webp",
+    "ocean-turkuaz-30x60-mat-75mm": "/images/varyant/ocean-turkuaz-30x60-mat-75mm.webp"
+  },
+  "salda": {
+    "salda-mavi-30x60-mat-75mm": "/images/varyant/salda-mavi-30x60-mat-75mm.webp"
+  },
+  "ducapool": {
+    "ducapool-mavi-45x45-mat-85mm": "/images/varyant/ducapool-mavi-45x45-mat-85mm.webp"
+  },
+  "pergamon": {
+    "pergamon-bej-45x45-parlak-75mm": "/images/varyant/pergamon-bej-45x45-parlak-75mm.webp",
+    "pergamon-beyaz-45x45-parlak-75mm": "/images/varyant/pergamon-beyaz-45x45-parlak-75mm.webp"
+  },
+  "saten": {
+    "saten-beyaz-45x45-mat-75mm": "/images/varyant/saten-beyaz-45x45-mat-75mm.webp"
+  },
+  "alaska": {
+    "alaska-beyaz-30x60-mat-75mm": "/images/varyant/alaska-beyaz-30x60-mat-75mm.webp",
+    "alaska-beyaz-30x90-saten-mat-9mm": "/images/varyant/alaska-beyaz-30x90-saten-mat-9mm.webp",
+    "alaska-beyaz-60x60-mat-9mm": "/images/varyant/alaska-beyaz-60x60-mat-9mm.webp",
+    "alaska-beyaz-60x120-mat-9mm": "/images/varyant/alaska-beyaz-60x120-mat-9mm.webp",
+    "alaska-beyaz-60x60-full-lappato-9mm": "/images/varyant/alaska-beyaz-60x60-full-lappato-9mm.webp",
+    "alaska-beyaz-60x120-full-lappato-9mm": "/images/varyant/alaska-beyaz-60x120-full-lappato-9mm.webp",
+    "alaska-opak-beyaz-30x60-parlak-75mm": "/images/varyant/alaska-opak-beyaz-30x60-parlak-75mm.webp",
+    "alaska-opak-beyaz-30x90-parlak-9mm": "/images/varyant/alaska-opak-beyaz-30x90-parlak-9mm.webp",
+    "alaska-super-beyaz-60x60-full-lappato-9mm": "/images/varyant/alaska-super-beyaz-60x60-full-lappato-9mm.webp",
+    "alaska-super-beyaz-60x120-full-lappato-9mm": "/images/varyant/alaska-super-beyaz-60x120-full-lappato-9mm.webp"
+  },
+  "pyramid": {
+    "pyramid-beyaz-30x60-parlak-75mm": "/images/varyant/pyramid-beyaz-30x60-parlak-75mm.webp",
+    "pyramid-lila-30x60-parlak-75mm": "/images/varyant/pyramid-lila-30x60-parlak-75mm.webp",
+    "pyramid-pergemon-beyaz-45x45-parlak-75mm": "/images/varyant/pyramid-pergemon-beyaz-45x45-parlak-75mm.webp",
+    "pyramid-siyah-30x60-parlak-75mm": "/images/varyant/pyramid-siyah-30x60-parlak-75mm.webp"
+  },
+  "sahra": {
+    "sahra-bej-60x60-full-lappato-9mm": "/images/varyant/sahra-bej-60x60-full-lappato-9mm.webp",
+    "sahra-bej-60x120-full-lappato-9mm": "/images/varyant/sahra-bej-60x120-full-lappato-9mm.webp",
+    "sahra-bone-60x60-full-lappato-9mm": "/images/varyant/sahra-bone-60x60-full-lappato-9mm.webp",
+    "sahra-bone-60x120-full-lappato-9mm": "/images/varyant/sahra-bone-60x120-full-lappato-9mm.webp"
+  }
+}

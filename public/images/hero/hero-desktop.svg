@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <linearGradient id="surface" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1a1815"/>
+      <stop offset="40%" stop-color="#252220"/>
+      <stop offset="100%" stop-color="#111010"/>
+    </linearGradient>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feBlend in="SourceGraphic" mode="multiply" result="blend"/>
+      <feComposite in="blend" in2="SourceGraphic" operator="in"/>
+    </filter>
+    <!-- Tile grid lines: large-format porcelain suggestion -->
+    <pattern id="tiles" x="0" y="0" width="320" height="320" patternUnits="userSpaceOnUse">
+      <rect width="320" height="320" fill="none" stroke="#2a2825" stroke-width="1" opacity="0.6"/>
+    </pattern>
+    <pattern id="tiles-sm" x="0" y="0" width="160" height="160" patternUnits="userSpaceOnUse">
+      <rect width="160" height="160" fill="none" stroke="#242220" stroke-width="0.5" opacity="0.4"/>
+    </pattern>
+  </defs>
+
+  <!-- Base surface — warm dark stone tone -->
+  <rect width="1920" height="1080" fill="url(#surface)"/>
+
+  <!-- Subtle tile grid — large format suggestion -->
+  <rect width="1920" height="1080" fill="url(#tiles)" opacity="0.7"/>
+  <rect width="1920" height="1080" fill="url(#tiles-sm)" opacity="0.4"/>
+
+  <!-- Material variation: lighter panel upper right -->
+  <ellipse cx="1400" cy="300" rx="600" ry="400" fill="#2e2b27" opacity="0.35"/>
+
+  <!-- Deeper shadow lower left (where text will sit) -->
+  <ellipse cx="300" cy="900" rx="500" ry="300" fill="#0a0908" opacity="0.6"/>
+
+  <!-- Placeholder label — development only, covered by gradient overlay at runtime -->
+  <text
+    x="960" y="480"
+    font-family="system-ui, sans-serif"
+    font-size="18"
+    font-weight="400"
+    fill="#3a3835"
+    text-anchor="middle"
+    letter-spacing="4"
+  >HERO FOTOĞRAFI BURAYA</text>
+  <text
+    x="960" y="510"
+    font-family="system-ui, sans-serif"
+    font-size="13"
+    font-weight="300"
+    fill="#2e2c2a"
+    text-anchor="middle"
+    letter-spacing="2"
+  >hero-desktop.jpg · min 1920×1080</text>
+</svg>

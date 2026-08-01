@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 900" width="1400" height="900">
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2A2420"/>
+      <stop offset="60%" stop-color="#1A1612"/>
+      <stop offset="100%" stop-color="#0E0C0A"/>
+    </linearGradient>
+  </defs>
+  <rect width="1400" height="900" fill="url(#g)"/>
+  <!-- Oblique tile lines — close-up detail perspective -->
+  <line x1="0" y1="160" x2="1400" y2="210" stroke="#3E3530" stroke-width="0.8" opacity="0.55"/>
+  <line x1="0" y1="330" x2="1400" y2="400" stroke="#3E3530" stroke-width="0.8" opacity="0.55"/>
+  <line x1="0" y1="510" x2="1400" y2="600" stroke="#3E3530" stroke-width="0.8" opacity="0.55"/>
+  <line x1="0" y1="700" x2="1400" y2="810" stroke="#3E3530" stroke-width="0.8" opacity="0.55"/>
+  <line x1="240" y1="0" x2="280" y2="900" stroke="#3E3530" stroke-width="0.8" opacity="0.55"/>
+  <line x1="520" y1="0" x2="580" y2="900" stroke="#3E3530" stroke-width="0.8" opacity="0.55"/>
+  <line x1="800" y1="0" x2="880" y2="900" stroke="#3E3530" stroke-width="0.8" opacity="0.55"/>
+  <line x1="1100" y1="0" x2="1200" y2="900" stroke="#3E3530" stroke-width="0.8" opacity="0.55"/>
+  <!-- Light catch — simulates oblique raking light on tile surface -->
+  <rect x="0" y="0" width="420" height="900" fill="url(#hl)" opacity="0.12"/>
+  <defs>
+    <linearGradient id="hl" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#C8B8A0"/>
+      <stop offset="100%" stop-color="transparent"/>
+    </linearGradient>
+  </defs>
+  <text x="700" y="462" font-family="system-ui,sans-serif" font-size="10" fill="#7A6A5A" text-anchor="middle" opacity="0.35" letter-spacing="4">DOĞRULAR SERAMİK — BOĞAZİÇİ VİLLA — DETAY 01</text>
+</svg>

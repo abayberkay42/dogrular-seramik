@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1200" width="900" height="1200">
+  <defs>
+    <linearGradient id="base" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#98886A"/>
+      <stop offset="55%" stop-color="#887860"/>
+      <stop offset="100%" stop-color="#706250"/>
+    </linearGradient>
+    <linearGradient id="rakelight" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#C0B090" stop-opacity="0.65"/>
+      <stop offset="40%" stop-color="#C0B090" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="transparent"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="1200" fill="url(#base)"/>
+  <rect width="900" height="1200" fill="url(#rakelight)"/>
+  <!-- Dense horizontal grain lines — sintered surface texture at close range -->
+  <line x1="0" y1="52" x2="900" y2="64" stroke="#A89870" stroke-width="0.5" opacity="0.44"/>
+  <line x1="0" y1="98" x2="820" y2="89" stroke="#A89870" stroke-width="0.4" opacity="0.34"/>
+  <line x1="60" y1="142" x2="900" y2="156" stroke="#A89870" stroke-width="0.5" opacity="0.42"/>
+  <line x1="0" y1="192" x2="900" y2="180" stroke="#A89870" stroke-width="0.3" opacity="0.24"/>
+  <line x1="0" y1="238" x2="860" y2="250" stroke="#A89870" stroke-width="0.5" opacity="0.42"/>
+  <line x1="120" y1="286" x2="900" y2="274" stroke="#A89870" stroke-width="0.4" opacity="0.34"/>
+  <line x1="0" y1="334" x2="900" y2="346" stroke="#A89870" stroke-width="0.5" opacity="0.42"/>
+  <line x1="0" y1="382" x2="780" y2="372" stroke="#A89870" stroke-width="0.3" opacity="0.24"/>
+  <line x1="0" y1="430" x2="900" y2="442" stroke="#A89870" stroke-width="0.5" opacity="0.42"/>
+  <line x1="40" y1="478" x2="900" y2="466" stroke="#A89870" stroke-width="0.4" opacity="0.34"/>
+  <!-- Single grout line — scale reference, horizontal across center -->
+  <line x1="0" y1="600" x2="900" y2="600" stroke="#584838" stroke-width="2.0" opacity="0.48"/>
+  <line x1="0" y1="526" x2="900" y2="538" stroke="#A89870" stroke-width="0.5" opacity="0.42"/>
+  <line x1="80" y1="574" x2="900" y2="562" stroke="#A89870" stroke-width="0.4" opacity="0.34"/>
+  <line x1="0" y1="622" x2="900" y2="634" stroke="#A89870" stroke-width="0.5" opacity="0.42"/>
+  <line x1="0" y1="670" x2="860" y2="660" stroke="#A89870" stroke-width="0.3" opacity="0.24"/>
+  <line x1="0" y1="718" x2="900" y2="728" stroke="#A89870" stroke-width="0.5" opacity="0.42"/>
+  <line x1="100" y1="766" x2="900" y2="754" stroke="#A89870" stroke-width="0.4" opacity="0.34"/>
+  <line x1="0" y1="814" x2="900" y2="824" stroke="#A89870" stroke-width="0.5" opacity="0.42"/>
+  <line x1="0" y1="862" x2="820" y2="852" stroke="#A89870" stroke-width="0.3" opacity="0.24"/>
+  <line x1="0" y1="910" x2="900" y2="920" stroke="#A89870" stroke-width="0.5" opacity="0.42"/>
+  <line x1="60" y1="958" x2="900" y2="948" stroke="#A89870" stroke-width="0.4" opacity="0.34"/>
+  <line x1="0" y1="1006" x2="900" y2="1016" stroke="#A89870" stroke-width="0.5" opacity="0.42"/>
+  <line x1="0" y1="1054" x2="880" y2="1044" stroke="#A89870" stroke-width="0.3" opacity="0.24"/>
+  <line x1="0" y1="1102" x2="900" y2="1112" stroke="#A89870" stroke-width="0.5" opacity="0.42"/>
+  <line x1="80" y1="1150" x2="900" y2="1140" stroke="#A89870" stroke-width="0.4" opacity="0.34"/>
+  <!-- Bright surface reflection edge — shows the tile's reflective quality -->
+  <rect x="0" y="0" width="110" height="1200" fill="url(#rakelight)" opacity="0.55"/>
+  <text x="450" y="1175" font-family="system-ui,sans-serif" font-size="9" fill="#9A8868" text-anchor="middle" opacity="0.22" letter-spacing="4">DOĞRULAR SERAMİK — YÜZEY DETAYI — SİNTERLEŞME DOKUSU</text>
+</svg>

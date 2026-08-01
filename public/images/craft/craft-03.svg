@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900">
+  <defs>
+    <linearGradient id="base" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#B8A880"/>
+      <stop offset="40%" stop-color="#C8B892"/>
+      <stop offset="100%" stop-color="#D8C8A8"/>
+    </linearGradient>
+    <radialGradient id="windowlight" cx="88%" cy="28%" r="58%">
+      <stop offset="0%" stop-color="#EAD8B4" stop-opacity="0.65"/>
+      <stop offset="100%" stop-color="transparent"/>
+    </radialGradient>
+    <radialGradient id="floorshine" cx="82%" cy="105%" r="48%">
+      <stop offset="0%" stop-color="#D2C2A0" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="transparent"/>
+    </radialGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#base)"/>
+  <rect width="1600" height="900" fill="url(#windowlight)"/>
+  <rect width="1600" height="900" fill="url(#floorshine)"/>
+  <!-- Floor/wall horizon line — architectural space -->
+  <line x1="0" y1="576" x2="1600" y2="576" stroke="#8A7A5E" stroke-width="0.7" opacity="0.38"/>
+  <!-- Floor tile grid — large format 800x400 implied -->
+  <line x1="0" y1="670" x2="1600" y2="668" stroke="#8A7A5E" stroke-width="0.8" opacity="0.32"/>
+  <line x1="0" y1="770" x2="1600" y2="767" stroke="#8A7A5E" stroke-width="0.8" opacity="0.32"/>
+  <line x1="0" y1="876" x2="1600" y2="872" stroke="#8A7A5E" stroke-width="0.7" opacity="0.28"/>
+  <!-- Floor vertical grout -->
+  <line x1="390" y1="576" x2="378" y2="900" stroke="#8A7A5E" stroke-width="0.8" opacity="0.28"/>
+  <line x1="790" y1="576" x2="790" y2="900" stroke="#8A7A5E" stroke-width="0.8" opacity="0.28"/>
+  <line x1="1190" y1="576" x2="1205" y2="900" stroke="#8A7A5E" stroke-width="0.8" opacity="0.28"/>
+  <!-- Wall tile grid — horizontal -->
+  <line x1="0" y1="192" x2="1600" y2="192" stroke="#9A8A70" stroke-width="0.5" opacity="0.22"/>
+  <line x1="0" y1="384" x2="1600" y2="384" stroke="#9A8A70" stroke-width="0.5" opacity="0.22"/>
+  <!-- Wall vertical grout -->
+  <line x1="376" y1="0" x2="376" y2="576" stroke="#9A8A70" stroke-width="0.5" opacity="0.18"/>
+  <line x1="752" y1="0" x2="752" y2="576" stroke="#9A8A70" stroke-width="0.5" opacity="0.18"/>
+  <line x1="1128" y1="0" x2="1128" y2="576" stroke="#9A8A70" stroke-width="0.5" opacity="0.18"/>
+  <!-- Window on right wall — natural light source -->
+  <rect x="1360" y="76" width="196" height="395" fill="#F0E4C8" opacity="0.25" rx="1"/>
+  <line x1="1458" y1="76" x2="1458" y2="471" stroke="#D8C8A0" stroke-width="0.7" opacity="0.3"/>
+  <line x1="1360" y1="274" x2="1556" y2="274" stroke="#D8C8A0" stroke-width="0.7" opacity="0.3"/>
+  <!-- Subtle veining on wall surface -->
+  <line x1="0" y1="96" x2="1300" y2="112" stroke="#B0A07A" stroke-width="0.5" opacity="0.22"/>
+  <line x1="80" y1="296" x2="1250" y2="280" stroke="#B0A07A" stroke-width="0.4" opacity="0.18"/>
+  <line x1="0" y1="488" x2="1100" y2="504" stroke="#B0A07A" stroke-width="0.5" opacity="0.20"/>
+  <text x="800" y="869" font-family="system-ui,sans-serif" font-size="10" fill="#7A6A4E" text-anchor="middle" opacity="0.20" letter-spacing="4">DOĞRULAR SERAMİK — MİMARİDE PORSELEN — ZEMİN VE DUVAR SÜREKLİLİĞİ</text>
+</svg>

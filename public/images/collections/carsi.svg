@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900">
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#5E5248"/>
+      <stop offset="100%" stop-color="#3C3230"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="900" fill="url(#g)"/>
+  <line x1="0" y1="300" x2="1200" y2="300" stroke="#766660" stroke-width="0.5" opacity="0.3"/>
+  <line x1="0" y1="600" x2="1200" y2="600" stroke="#766660" stroke-width="0.5" opacity="0.3"/>
+  <line x1="400" y1="0" x2="400" y2="900" stroke="#766660" stroke-width="0.5" opacity="0.3"/>
+  <line x1="800" y1="0" x2="800" y2="900" stroke="#766660" stroke-width="0.5" opacity="0.3"/>
+  <text x="600" y="458" font-family="system-ui,sans-serif" font-size="13" fill="#A89690" text-anchor="middle" opacity="0.35" letter-spacing="3">DOĞRULAR SERAMİK — ÇARŞI</text>
+</svg>

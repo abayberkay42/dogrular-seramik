@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 900" width="1400" height="900">
+  <defs>
+    <linearGradient id="g" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#382E26"/>
+      <stop offset="100%" stop-color="#1A1510"/>
+    </linearGradient>
+    <linearGradient id="vanish" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#C0A882" stop-opacity="0.22"/>
+      <stop offset="40%" stop-color="transparent"/>
+    </linearGradient>
+  </defs>
+  <rect width="1400" height="900" fill="url(#g)"/>
+  <!-- Corridor — strong vanishing point perspective lines -->
+  <line x1="700" y1="350" x2="0" y2="0" stroke="#50443A" stroke-width="0.8" opacity="0.5"/>
+  <line x1="700" y1="350" x2="1400" y2="0" stroke="#50443A" stroke-width="0.8" opacity="0.5"/>
+  <line x1="700" y1="350" x2="0" y2="900" stroke="#50443A" stroke-width="0.8" opacity="0.5"/>
+  <line x1="700" y1="350" x2="1400" y2="900" stroke="#50443A" stroke-width="0.8" opacity="0.5"/>
+  <!-- Floor grid -->
+  <line x1="700" y1="350" x2="200" y2="900" stroke="#50443A" stroke-width="0.6" opacity="0.35"/>
+  <line x1="700" y1="350" x2="500" y2="900" stroke="#50443A" stroke-width="0.6" opacity="0.35"/>
+  <line x1="700" y1="350" x2="900" y2="900" stroke="#50443A" stroke-width="0.6" opacity="0.35"/>
+  <line x1="700" y1="350" x2="1200" y2="900" stroke="#50443A" stroke-width="0.6" opacity="0.35"/>
+  <!-- Light from left -->
+  <rect x="0" y="0" width="1400" height="900" fill="url(#vanish)"/>
+  <!-- Focal point highlight -->
+  <circle cx="700" cy="350" r="60" fill="#C8B090" opacity="0.06"/>
+  <text x="700" y="520" font-family="system-ui,sans-serif" font-size="10" fill="#7A6A56" text-anchor="middle" opacity="0.3" letter-spacing="4">DOĞRULAR SERAMİK — BOĞAZİÇİ VİLLA — KORİDOR 03</text>
+</svg>

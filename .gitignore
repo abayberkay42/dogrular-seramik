@@ -1,0 +1,77 @@
+# ── Bağımlılıklar ────────────────────────────────────────────────
+/node_modules
+/.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/releases
+!.yarn/plugins
+!.yarn/versions
+
+# ── Next.js çıktıları ────────────────────────────────────────────
+/.next/
+/out/
+/build
+next-env.d.ts
+
+# ── Ortam değişkenleri (Vercel panelinden girilir) ───────────────
+.env
+.env*.local
+.env.production
+
+# ── Test / kapsam ────────────────────────────────────────────────
+/coverage
+
+# ── Hata ayıklama ────────────────────────────────────────────────
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# ── Editör / işletim sistemi ─────────────────────────────────────
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+Thumbs.db
+*.swp
+
+# ── Vercel ───────────────────────────────────────────────────────
+.vercel
+
+# ── TypeScript ───────────────────────────────────────────────────
+*.tsbuildinfo
+
+# ══════════════════════════════════════════════════════════════════
+# Projeye özel: siteye dahil olmayan kaynak dosyalar
+# Bunlar yerelde kalır; siteye yalnızca public/ altındaki işlenmiş
+# hâlleri girer. Yedeklerinizi ayrıca saklayın — git'e gitmiyorlar.
+# ══════════════════════════════════════════════════════════════════
+
+# İşlenmemiş kaynak görseller ve eski sürümler
+/_yedek/
+
+# Ham kaynak klasörleri (görseller işlenip public/ altına alındı)
+/Seriler/
+/Logolar/
+/Koleksiyon/
+
+# Ham kaynak dosyalar (PDF, video, tek tek görseller)
+/*.pdf
+/*.mp4
+/*.png
+/*.jpg
+/*.jpeg
+/*.txt
+
+# Yardımcı betiklerin ara çıktıları
+/scripts/tmp/
+
+# Kaynak tasarım dosyaları ve yerel günlükler
+/*.psd
+/*.ai
+/dev.log
+
+# Netlify yapılandırması — dağıtım Vercel üzerinden yapılıyor.
+# Dosya diskte duruyor, yalnızca git'e gönderilmiyor.
+/netlify.toml

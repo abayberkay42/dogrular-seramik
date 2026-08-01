@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 900" width="1400" height="900">
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1A1612"/>
+      <stop offset="50%" stop-color="#100E0C"/>
+      <stop offset="100%" stop-color="#080604"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="45%" r="55%">
+      <stop offset="0%" stop-color="#3A3228" stop-opacity="1"/>
+      <stop offset="100%" stop-color="transparent"/>
+    </radialGradient>
+    <linearGradient id="horiz" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#4A6070" stop-opacity="0.18"/>
+      <stop offset="40%" stop-color="transparent"/>
+    </linearGradient>
+  </defs>
+  <rect width="1400" height="900" fill="url(#g)"/>
+  <!-- Subtle room-scale light bloom in center -->
+  <rect x="0" y="0" width="1400" height="900" fill="url(#glow)"/>
+  <!-- Panoramic horizontal emphasis — full room -->
+  <rect x="0" y="0" width="1400" height="900" fill="url(#horiz)"/>
+  <!-- Minimal floor tile lines — panoramic spacing -->
+  <line x1="0" y1="500" x2="1400" y2="500" stroke="#30281E" stroke-width="0.6" opacity="0.5"/>
+  <line x1="0" y1="650" x2="1400" y2="650" stroke="#30281E" stroke-width="0.6" opacity="0.4"/>
+  <line x1="0" y1="800" x2="1400" y2="800" stroke="#30281E" stroke-width="0.6" opacity="0.3"/>
+  <!-- Distant windows hinted as light specks -->
+  <rect x="580" y="180" width="80" height="120" fill="#8090A0" opacity="0.07" rx="2"/>
+  <rect x="740" y="180" width="80" height="120" fill="#8090A0" opacity="0.07" rx="2"/>
+  <text x="700" y="470" font-family="system-ui,sans-serif" font-size="10" fill="#5A5048" text-anchor="middle" opacity="0.28" letter-spacing="4">DOĞRULAR SERAMİK — BOĞAZİÇİ VİLLA — TAM GÖRÜNÜM 05</text>
+</svg>

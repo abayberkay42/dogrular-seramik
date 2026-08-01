@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 900" width="1400" height="900">
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4A4438"/>
+      <stop offset="50%" stop-color="#3A3228"/>
+      <stop offset="100%" stop-color="#24201A"/>
+    </linearGradient>
+    <linearGradient id="sky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#5A7080" stop-opacity="0.25"/>
+      <stop offset="60%" stop-color="transparent"/>
+    </linearGradient>
+    <linearGradient id="gnd" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="transparent"/>
+      <stop offset="100%" stop-color="#1A1612" stop-opacity="0.5"/>
+    </linearGradient>
+  </defs>
+  <rect width="1400" height="900" fill="url(#g)"/>
+  <!-- Sky gradient at top — outdoor feel -->
+  <rect x="0" y="0" width="1400" height="500" fill="url(#sky)"/>
+  <!-- Ground gradient at bottom -->
+  <rect x="0" y="400" width="1400" height="500" fill="url(#gnd)"/>
+  <!-- Horizon line -->
+  <line x1="0" y1="480" x2="1400" y2="480" stroke="#6A7A60" stroke-width="0.8" opacity="0.35"/>
+  <!-- Terrace tile grid — more generous spacing, outdoor scale -->
+  <line x1="0" y1="550" x2="1400" y2="550" stroke="#504840" stroke-width="0.7" opacity="0.35"/>
+  <line x1="0" y1="650" x2="1400" y2="650" stroke="#504840" stroke-width="0.7" opacity="0.35"/>
+  <line x1="0" y1="780" x2="1400" y2="780" stroke="#504840" stroke-width="0.7" opacity="0.35"/>
+  <line x1="350" y1="480" x2="350" y2="900" stroke="#504840" stroke-width="0.7" opacity="0.3"/>
+  <line x1="700" y1="480" x2="700" y2="900" stroke="#504840" stroke-width="0.7" opacity="0.3"/>
+  <line x1="1050" y1="480" x2="1050" y2="900" stroke="#504840" stroke-width="0.7" opacity="0.3"/>
+  <text x="700" y="440" font-family="system-ui,sans-serif" font-size="10" fill="#7A8A70" text-anchor="middle" opacity="0.3" letter-spacing="4">DOĞRULAR SERAMİK — BOĞAZİÇİ VİLLA — TERAS 04</text>
+</svg>
