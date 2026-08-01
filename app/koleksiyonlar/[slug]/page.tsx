@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import Image from 'next/image'
-import { COLLECTIONS, getCollection, getProjectsByCollection } from '@/lib/data'
+import { COLLECTIONS, getCollection } from '@/lib/data'
 import { BASE_URL } from '@/lib/config'
 
 type Props = {
@@ -42,7 +42,6 @@ export default async function CollectionDetailPage({ params }: Props) {
   const col = getCollection(slug)
   if (!col) notFound()
 
-  const relatedProjects = getProjectsByCollection(slug)
 
   const collectionSchema = {
     '@context': 'https://schema.org',
@@ -165,44 +164,6 @@ export default async function CollectionDetailPage({ params }: Props) {
                     sizes="(max-width: 767px) 100vw, 50vw"
                     className="cd-hero-gallery-img"
                   />
-                </li>
-              ))}
-            </ul>
-          </div>
-        </section>
-      )}
-
-      {/* ── Related projects ────────────────────────────────────────── */}
-      {relatedProjects.length > 0 && (
-        <section className="cd-related" aria-label="Bu koleksiyonla tamamlanan projeler">
-          <div className="cd-shell">
-            <h2 className="cd-related-heading">Bu koleksiyonla tamamlanan projeler</h2>
-            <ul className="projects-grid" role="list">
-              {relatedProjects.map((project) => (
-                <li key={project.slug}>
-                  <Link
-                    href={`/projeler/${project.slug}`}
-                    className="project-card"
-                    aria-label={`${project.name} projesini görüntüle — ${project.location}, ${project.year}`}
-                  >
-                    <div className="project-card-image">
-                      <Image
-                        src={project.images[0].src}
-                        alt={project.images[0].alt}
-                        fill
-                        unoptimized
-                        sizes="(max-width: 639px) 100vw, (max-width: 1023px) 50vw, 33vw"
-                        className="project-card-img"
-                      />
-                    </div>
-                    <div className="project-card-info">
-                      <p className="project-card-label">{project.typology}</p>
-                      <h3 className="project-card-name">{project.name}</h3>
-                      <p className="project-card-meta">
-                        {project.location} · {project.year}
-                      </p>
-                    </div>
-                  </Link>
                 </li>
               ))}
             </ul>

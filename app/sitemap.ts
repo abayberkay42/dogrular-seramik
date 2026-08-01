@@ -1,5 +1,5 @@
 import type { MetadataRoute } from 'next'
-import { COLLECTIONS, PROJECTS } from '@/lib/data'
+import { COLLECTIONS } from '@/lib/data'
 import { VITRIFIYE_CATEGORIES } from '@/lib/vitrifiye-data'
 import { BLOG_YAZILARI } from '@/lib/blog-data'
 
@@ -19,7 +19,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/kataloglar`, lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
     { url: `${BASE_URL}/markalarimiz`, lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
     { url: `${BASE_URL}/blog`, lastModified: now, changeFrequency: 'weekly', priority: 0.8 },
-    { url: `${BASE_URL}/projeler`, lastModified: now, changeFrequency: 'monthly', priority: 0.8 },
     { url: `${BASE_URL}/hakkimizda`, lastModified: now, changeFrequency: 'yearly', priority: 0.6 },
     { url: `${BASE_URL}/iletisim`, lastModified: now, changeFrequency: 'yearly', priority: 0.7 },
     { url: `${BASE_URL}/ornek-iste`, lastModified: now, changeFrequency: 'yearly', priority: 0.7 },
@@ -46,12 +45,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }))
 
-  const projectRoutes: MetadataRoute.Sitemap = PROJECTS.map((project) => ({
-    url: `${BASE_URL}/projeler/${project.slug}`,
-    lastModified: now,
-    changeFrequency: 'yearly' as const,
-    priority: 0.7,
-  }))
 
-  return [...staticRoutes, ...blogRoutes, ...collectionRoutes, ...vitrifiyeRoutes, ...projectRoutes]
+  return [...staticRoutes, ...blogRoutes, ...collectionRoutes, ...vitrifiyeRoutes]
 }
