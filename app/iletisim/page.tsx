@@ -55,10 +55,10 @@ export default function IletisimPage() {
                 <div className="ct-info-block">
                   <p className="ct-info-label">E-posta</p>
                   <a
-                    href="mailto:dogrularseramikk@gmail.com"
+                    href="mailto:dogrularseramik@gmail.com"
                     className="ct-info-value"
                   >
-                    dogrularseramikk@gmail.com
+                    dogrularseramik@gmail.com
                   </a>
                 </div>
 

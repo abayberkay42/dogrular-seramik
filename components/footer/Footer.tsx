@@ -160,10 +160,10 @@ export function Footer() {
 
               <div className="footer-contact-body">
                 <a
-                  href="mailto:dogrularseramikk@gmail.com"
+                  href="mailto:dogrularseramik@gmail.com"
                   className="footer-contact-row footer-contact-row--link"
                 >
-                  dogrularseramikk@gmail.com
+                  dogrularseramik@gmail.com
                 </a>
                 <a
                   href="tel:+905373575667"

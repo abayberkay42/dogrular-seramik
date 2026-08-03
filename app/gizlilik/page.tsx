@@ -55,8 +55,8 @@ export default function GizlilikPage() {
               <p className="legal-para">
                 KVKK kapsamında kişisel verilerinize erişme, düzeltme veya silme hakkına
                 sahipsiniz. Bu haklarınızı kullanmak için{' '}
-                <a href="mailto:dogrularseramikk@gmail.com" className="legal-link">
-                  dogrularseramikk@gmail.com
+                <a href="mailto:dogrularseramik@gmail.com" className="legal-link">
+                  dogrularseramik@gmail.com
                 </a>{' '}
                 adresine e-posta gönderebilirsiniz.
               </p>

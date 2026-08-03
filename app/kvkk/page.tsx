@@ -33,7 +33,7 @@ export default function KvkkPage() {
               <h2 id="kvkk-sorumlu" className="legal-section-heading">Veri Sorumlusu</h2>
               <p className="legal-para">
                 Doğrular Seramik, veri sorumlusu sıfatıyla kişisel verilerinizi işlemektedir.
-                İletişim: dogrularseramikk@gmail.com
+                İletişim: dogrularseramik@gmail.com
               </p>
             </section>
 
@@ -62,8 +62,8 @@ export default function KvkkPage() {
               </ul>
               <p className="legal-para">
                 Haklarınızı kullanmak için{' '}
-                <a href="mailto:dogrularseramikk@gmail.com" className="legal-link">
-                  dogrularseramikk@gmail.com
+                <a href="mailto:dogrularseramik@gmail.com" className="legal-link">
+                  dogrularseramik@gmail.com
                 </a>{' '}
                 adresine e-posta gönderebilirsiniz.
               </p>

@@ -16,7 +16,7 @@
 declare(strict_types=1);
 
 // ── Ayarlar ──────────────────────────────────────────────────────────
-const ALICI          = 'dogrularseramikk@gmail.com';
+const ALICI          = 'dogrularseramik@gmail.com';
 const GONDEREN_ADRES = 'web@dogrularseramik.com';  // SPF uyumu için alan adı üzerinde olmalı
 const GONDEREN_ISIM  = 'Doğrular Seramik Web';
 const SITE_ADRESI    = 'https://www.dogrularseramik.com';

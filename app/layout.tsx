@@ -38,7 +38,7 @@ const LOCAL_BUSINESS_SCHEMA = {
   description:
     'Hatay Antakya\'da seramik, vitrifiye, banyo mobilyası ve yapı kimyasalları satışı. Etili Seramik, Turkuaz Seramik · CeraStyle, VitrA, Balneom, KYK ve Matkim ürünleri showroomumuzda.',
   telephone: '+90-537-357-56-67',
-  email: 'dogrularseramikk@gmail.com',
+  email: 'dogrularseramik@gmail.com',
   address: ADRES,
   geo: {
     '@type': 'GeoCoordinates',
