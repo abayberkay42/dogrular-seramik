@@ -16,6 +16,7 @@ export function SampleRequestForm() {
 
     const fd = new FormData(e.currentTarget)
     const payload = {
+      tip:        'ornek',
       name:       fd.get('name')       as string,
       email:      fd.get('email')      as string,
       phone:      fd.get('phone')      as string,
@@ -23,11 +24,13 @@ export function SampleRequestForm() {
       collection: fd.get('collection') as string,
       address:    fd.get('address')    as string,
       notes:      fd.get('notes')      as string,
+      website:    fd.get('website')    as string,  // bot tuzağı — insan doldurmaz
     }
 
     try {
-      // trailingSlash: true açık — sondaki eğik çizgi 308 yönlendirmesini önler.
-      const res = await fetch('/api/ornek-iste/', {
+      // Site statik olarak yayınlandığı için mail gönderimi PHP betiğiyle
+      // yapılır (bkz. public/form-gonder.php).
+      const res = await fetch('/form-gonder.php', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(payload),
@@ -63,6 +66,17 @@ export function SampleRequestForm() {
       aria-label="Örnek talep formu"
       noValidate
     >
+      {/* Bot tuzağı: ekran okuyuculardan ve klavyeden gizli. Doldurulursa
+          sunucu gönderimi sessizce yok sayar. */}
+      <input
+        type="text"
+        name="website"
+        tabIndex={-1}
+        autoComplete="off"
+        aria-hidden="true"
+        style={{ position: 'absolute', left: '-9999px', width: 1, height: 1 }}
+      />
+
       <div className="ds-form-row">
         <div className="ds-form-group">
           <label htmlFor="sr-name" className="ds-form-label">

@@ -1,0 +1,70 @@
+# Doğrular Seramik — Apache/LiteSpeed yapılandırması
+# Bu dosya public/ içinde durur, derlemede out/ klasörüne kopyalanır ve
+# public_html'e yüklenir.
+
+# ── 404 sayfası ──────────────────────────────────────────────────────
+# Next.js statik çıktısı 404.html üretir; Apache'ye bunu göstermesini söyle.
+ErrorDocument 404 /404.html
+
+# Dizin listelemesini kapat — klasör içeriği dışarıya sızmasın.
+Options -Indexes
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # ── HTTPS'e yönlendir ──────────────────────────────────────────────
+  RewriteCond %{HTTPS} !=on
+  RewriteCond %{HTTP:X-Forwarded-Proto} !https
+  RewriteRule ^(.*)$ https://www.dogrularseramik.com/$1 [R=301,L]
+
+  # ── www'suz adresi www'ya yönlendir ────────────────────────────────
+  # Sitenin canonical etiketleri, sitemap'i ve JSON-LD verisi www'lu
+  # adrese göre yazılmış; tek adreste toplanmalı.
+  RewriteCond %{HTTP_HOST} ^dogrularseramik\.com$ [NC]
+  RewriteRule ^(.*)$ https://www.dogrularseramik.com/$1 [R=301,L]
+</IfModule>
+
+# ── Önbellekleme ─────────────────────────────────────────────────────
+<IfModule mod_expires.c>
+  ExpiresActive On
+
+  # Next.js'in hash'li dosyaları — içerik değişirse ad da değişir,
+  # bu yüzden uzun süre saklanabilir.
+  <FilesMatch "\.(js|css)$">
+    ExpiresDefault "access plus 1 year"
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+
+  # Görseller, yazı tipleri, katalog PDF'leri
+  <FilesMatch "\.(webp|png|jpg|jpeg|gif|svg|ico|woff2|woff|pdf|mp4)$">
+    ExpiresDefault "access plus 6 months"
+  </FilesMatch>
+
+  # HTML — her zaman tazelensin ki içerik güncellemeleri hemen görünsün
+  <FilesMatch "\.html$">
+    ExpiresDefault "access plus 0 seconds"
+    Header set Cache-Control "public, max-age=0, must-revalidate"
+  </FilesMatch>
+</IfModule>
+
+# ── Sıkıştırma ───────────────────────────────────────────────────────
+# Görseller zaten WebP; tekrar sıkıştırmak fayda sağlamaz.
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/css text/plain text/xml
+  AddOutputFilterByType DEFLATE application/javascript application/json
+  AddOutputFilterByType DEFLATE application/xml image/svg+xml
+  AddOutputFilterByType DEFLATE font/woff2
+</IfModule>
+
+# ── Güvenlik başlıkları ──────────────────────────────────────────────
+<IfModule mod_headers.c>
+  Header set X-Content-Type-Options "nosniff"
+  Header set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always set X-Frame-Options "SAMEORIGIN"
+</IfModule>
+
+# ── Doğru MIME türleri ───────────────────────────────────────────────
+<IfModule mod_mime.c>
+  AddType image/webp .webp
+  AddType font/woff2 .woff2
+</IfModule>

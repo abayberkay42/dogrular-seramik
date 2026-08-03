@@ -6,12 +6,43 @@ type Status = 'idle' | 'sending' | 'success' | 'error'
 
 export function ContactForm() {
   const [status, setStatus] = useState<Status>('idle')
+  const [errorMsg, setErrorMsg] = useState('')
 
   async function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault()
     setStatus('sending')
-    await new Promise((r) => setTimeout(r, 800))
-    setStatus('success')
+    setErrorMsg('')
+
+    const fd = new FormData(e.currentTarget)
+    const payload = {
+      tip:     'iletisim',
+      name:    fd.get('name')    as string,
+      email:   fd.get('email')   as string,
+      company: fd.get('company') as string,
+      subject: fd.get('subject') as string,
+      message: fd.get('message') as string,
+      website: fd.get('website') as string,  // bot tuzağı — insan doldurmaz
+    }
+
+    try {
+      // Site statik olarak yayınlandığı için mail gönderimi PHP betiğiyle
+      // yapılır (bkz. public/form-gonder.php).
+      const res = await fetch('/form-gonder.php', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload),
+      })
+
+      if (!res.ok) {
+        const data = await res.json().catch(() => ({}))
+        throw new Error(data.error ?? 'Bir hata oluştu.')
+      }
+
+      setStatus('success')
+    } catch (err) {
+      setErrorMsg(err instanceof Error ? err.message : 'Bir hata oluştu, lütfen tekrar deneyin.')
+      setStatus('error')
+    }
   }
 
   if (status === 'success') {
@@ -32,6 +63,17 @@ export function ContactForm() {
       aria-label="İletişim formu"
       noValidate
     >
+      {/* Bot tuzağı: ekran okuyuculardan ve klavyeden gizli. Doldurulursa
+          sunucu gönderimi sessizce yok sayar. */}
+      <input
+        type="text"
+        name="website"
+        tabIndex={-1}
+        autoComplete="off"
+        aria-hidden="true"
+        style={{ position: 'absolute', left: '-9999px', width: 1, height: 1 }}
+      />
+
       <div className="ds-form-row">
         <div className="ds-form-group">
           <label htmlFor="ct-name" className="ds-form-label">
@@ -109,6 +151,12 @@ export function ContactForm() {
           rows={5}
         />
       </div>
+
+      {status === 'error' && (
+        <p className="ds-form-error" role="alert">
+          {errorMsg || 'Bir hata oluştu, lütfen tekrar deneyin.'}
+        </p>
+      )}
 
       <button
         type="submit"

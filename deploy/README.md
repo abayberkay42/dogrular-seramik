@@ -1,196 +1,96 @@
-# Sunucuya Kurulum — Doğrular Seramik
+# Yayına Alma — Doğrular Seramik
 
-VPS üzerinde Next.js 15 + pm2 + nginx ile yayın.
+Site **statik HTML** olarak üretilir ve Hostinger paylaşımlı hostinge yüklenir.
+Sunucuda Node.js süreci çalışmaz; LiteSpeed dosyaları doğrudan servis eder.
 
-Kod sunucuya **doğrudan `git push` ile** gider — GitHub veya başka bir aracı servis
-gerekmez. Sunucuda çıplak (bare) bir git deposu tutulur; siz yerelden ona
-gönderirsiniz, sunucu otomatik derleyip siteyi yeniler.
+**Sunucu bilgileri**
 
-**Neden bu yöntem:** proje 268 MB. `scp` ile her seferinde tamamını yüklemek
-gerekirdi; git yalnızca **değişen dosyaları** gönderir. İlk gönderim birkaç
-dakika sürer, sonraki güncellemeler saniyeler içinde biter.
+| | |
+|---|---|
+| SSH | `ssh -p 65002 u343309152@46.17.175.226` |
+| Site klasörü | `~/domains/dogrularseramik.com/public_html` |
+| Panel | https://hpanel.hostinger.com |
 
----
-
-## Sunucu gereksinimleri
-
-| Gereksinim | Sürüm | Kontrol komutu |
-|---|---|---|
-| Node.js | 20 veya üzeri | `node -v` |
-| npm | 10+ | `npm -v` |
-| git | herhangi | `git --version` |
-| pm2 | son sürüm | `pm2 -v` |
-| nginx | herhangi | `nginx -v` |
-| Boş disk | en az 3 GB | `df -h /` |
-| RAM | en az 2 GB (derleme için) | `free -h` |
-
-Node 20+ şart — proje Next.js 15 kullanıyor.
-
-Root ile bağlanıyorsanız aşağıdaki komutlardaki `sudo` kelimelerini silin.
+Formların mail gönderimi `form-gonder.php` ile yapılır — Node API rotası bu
+modda çalışmayacağı için kaldırıldı. Dış servis veya üyelik gerekmez.
 
 ---
 
-## Adım 1 — Sunucuyu hazırlayın
+## Adım 1 — Derleyin (yerel bilgisayarda)
 
 ```
-ssh root@SUNUCU_IP
-```
-
-Eksik araçları kurun (Ubuntu/Debian):
-
-```
-apt update
-apt install -y git nginx
-curl -fsSL https://deb.nodesource.com/setup_20.x | bash -
-apt install -y nodejs
-npm install -g pm2
-```
-
-Doğrulayın — hepsi sürüm numarası yazdırmalı:
-
-```
-node -v && npm -v && git --version && pm2 -v && nginx -v
-```
-
----
-
-## Adım 2 — Sunucuda çıplak depo oluşturun
-
-Sitenin kodu `/var/www/dogrular-seramik` içinde çalışacak, git verisi ise
-ayrı bir yerde (`/var/git`) durur.
-
-```
-mkdir -p /var/git /var/www/dogrular-seramik /var/log/pm2
-cd /var/git
-git init --bare dogrular-seramik.git
-```
-
----
-
-## Adım 3 — Gmail bilgilerini girin
-
-Örnek İste formunun mail gönderebilmesi için gerekli.
-Bu dosya git'e **gitmez**, sunucuda kalır ve güncellemelerde silinmez.
-
-```
-nano /var/www/dogrular-seramik/.env.production
-```
-
-İçine (değerleri kendi bilgilerinizle değiştirin):
-
-```
-GMAIL_USER=ornek@gmail.com
-GMAIL_APP_PASSWORD=uygulamasifresi
-```
-
-Kaydedin, sonra izinleri kısıtlayın — şifre içeriyor:
-
-```
-chmod 600 /var/www/dogrular-seramik/.env.production
-```
-
----
-
-## Adım 4 — İlk gönderimi yapın (yerel bilgisayardan)
-
-Kendi bilgisayarınızda, proje klasöründe:
-
-```
-git remote add sunucu ssh://root@SUNUCU_IP/var/git/dogrular-seramik.git
-git push sunucu main
-```
-
-268 MB gittiği için ilk gönderim birkaç dakika sürer.
-Bu aşamada sunucu henüz otomatik derleme yapmaz — kancayı Adım 5'te kuracağız.
-
----
-
-## Adım 5 — Otomatik dağıtım kancasını kurun (sunucuda)
-
-Artık kod sunucuda olduğu için kanca dosyası da orada:
-
-```
-cp /var/www/dogrular-seramik/deploy/post-receive /var/git/dogrular-seramik.git/hooks/post-receive
-chmod +x /var/git/dogrular-seramik.git/hooks/post-receive
-```
-
-Kanca henüz çalışmadığı için ilk kurulumu elle yapın:
-
-```
-cd /var/www/dogrular-seramik
-git --work-tree=/var/www/dogrular-seramik --git-dir=/var/git/dogrular-seramik.git checkout -f main
-npm ci
+cd "D:/Claude-skil/dogrular-seramik"
 npm run build
 ```
 
-`npm run build` 2-5 dakika sürer, 209 sayfa üretir.
+`out/` klasörü oluşur: 208 sayfa, ~286 MB.
+İçinde `.htaccess` ve `form-gonder.php` de bulunur — ikisi de `public/`
+klasöründen otomatik kopyalanır.
 
-**RAM 2 GB'ın altındaysa** derleme çökebilir. Önce takas alanı açın:
+---
+
+## Adım 2 — Tek paket hâline getirin
+
+286 MB'ı dosya dosya yüklemek çok yavaş olur; tek arşiv olarak gönderin.
 
 ```
-fallocate -l 2G /swapfile && chmod 600 /swapfile
-mkswap /swapfile && swapon /swapfile
+cd "D:/Claude-skil/dogrular-seramik/out"
+tar -czf ../site.tar.gz .
 ```
 
 ---
 
-## Adım 6 — pm2 ile çalıştırın
+## Adım 3 — Sunucuya yükleyin
 
 ```
-cd /var/www/dogrular-seramik
-pm2 start ecosystem.config.js --env production
-pm2 save
-pm2 startup
+cd "D:/Claude-skil/dogrular-seramik"
+scp -P 65002 site.tar.gz u343309152@46.17.175.226:~/
 ```
 
-`pm2 startup` size bir komut yazdırır — onu kopyalayıp çalıştırın.
-Sunucu yeniden başladığında site otomatik ayağa kalkar.
-
-Doğrulayın:
-
-```
-pm2 status
-curl -I http://127.0.0.1:3001
-```
-
-`HTTP/1.1 200 OK` görmelisiniz.
+Bağlantı hızınıza göre birkaç dakika sürer.
 
 ---
 
-## Adım 7 — nginx
+## Adım 4 — Sunucuda açın
 
 ```
-cp /var/www/dogrular-seramik/deploy/nginx.conf /etc/nginx/sites-available/dogrularseramik
-ln -s /etc/nginx/sites-available/dogrularseramik /etc/nginx/sites-enabled/
-rm -f /etc/nginx/sites-enabled/default
-nginx -t
-systemctl reload nginx
+ssh -p 65002 u343309152@46.17.175.226
 ```
 
-`nginx -t` "syntax is ok" demeli.
-
-Güvenlik duvarı varsa portları açın:
+Önce mevcut içeriği kontrol edin — yanlış klasörü boşaltmayalım:
 
 ```
-ufw allow 80/tcp && ufw allow 443/tcp
+ls -la ~/domains/dogrularseramik.com/public_html/
 ```
+
+İçinde yalnızca Hostinger'ın varsayılan dosyaları (`default.php`,
+`index.html` gibi) varsa temizleyip yeni siteyi açın:
+
+```
+cd ~/domains/dogrularseramik.com/public_html
+rm -rf ./* ./.htaccess
+tar -xzf ~/site.tar.gz -C .
+rm ~/site.tar.gz
+ls -la | head
+```
+
+`.htaccess`, `index.html`, `form-gonder.php`, `_next/`, `images/` görmelisiniz.
 
 ---
 
-## Adım 8 — DNS
+## Adım 5 — DNS'i Hostinger'a yönlendirin
 
-Alan adını sunucuya yönlendirin.
+⚠️ Alan adı şu an **Namecheap'i** (`162.0.235.154`) gösteriyor, Hostinger'ı değil.
 
-⚠️ **MX ve TXT kayıtlarına dokunmayın** — `@dogrularseramik.com` e-postaları onlara bağlı,
-silinirse gelen mailler kaybolur.
+⚠️ **MX ve TXT kayıtlarına dokunmayın** — `@dogrularseramik.com` e-postaları
+Namecheap'te (`mx1-hosting.jellyfish.systems`). Silinirse gelen mailler kaybolur.
 
-| Tip | Ad | Değer |
+Namecheap panelinden veya cPanel → Zone Editor'den:
+
+| Tip | Ad | Yeni değer |
 |---|---|---|
-| A | `@` | SUNUCU_IP |
-| A | `www` | SUNUCU_IP |
-
-Bu değişiklik Namecheap alan adı panelinden veya cPanel → Zone Editor'den yapılır;
-sunucuya root erişimi bunun için **yeterli değildir**.
+| A | `@` | `46.17.175.226` |
+| A | `www` | `46.17.175.226` |
 
 Yayılmayı bekleyin (10 dk – 2 saat), sonra kontrol edin:
 
@@ -198,52 +98,69 @@ Yayılmayı bekleyin (10 dk – 2 saat), sonra kontrol edin:
 dig +short www.dogrularseramik.com
 ```
 
-Sunucunun IP'sini döndürmeli.
+`46.17.175.226` dönmeli.
 
 ---
 
-## Adım 9 — SSL sertifikası
+## Adım 6 — SSL
 
-DNS yayıldıktan **sonra** çalıştırın, öncesinde başarısız olur:
+DNS yayıldıktan sonra hPanel → **Güvenlik** → **SSL** → alan adını seçip
+**Kur**. Hostinger ücretsiz Let's Encrypt sertifikası verir, birkaç dakikada
+aktifleşir.
 
-```
-apt install -y certbot python3-certbot-nginx
-certbot --nginx -d dogrularseramik.com -d www.dogrularseramik.com
-```
-
-Certbot 443 bloğunu ve HTTP→HTTPS yönlendirmesini otomatik ekler.
-Sertifika 90 günlük, kendini yeniler. Kontrol:
-
-```
-certbot renew --dry-run
-```
+`.htaccess` zaten HTTP→HTTPS ve www'suz→www yönlendirmesi yapıyor; sertifika
+kurulmadan önce bu yönlendirme hataya yol açacağı için **SSL'i DNS'ten hemen
+sonra kurun**.
 
 ---
 
-## Güncelleme (kurulumdan sonra)
+## Adım 7 — E-posta gönderimini doğrulayın
 
-Yerel bilgisayarınızda tek komut yeter:
+Site açıldıktan sonra `/ornek-iste/` ve `/iletisim/` formlarını gerçek veriyle
+deneyin. Mail `dogrularseramikk@gmail.com` adresine düşmeli.
+
+Mail gelmiyor veya spam'e düşüyorsa SPF kaydı eksik olabilir. Alan adının TXT
+kaydına Hostinger'ın sunucularını ekleyin:
 
 ```
-git push sunucu main
+v=spf1 include:_spf.mail.hostinger.com include:spf.privateemail.com ~all
 ```
 
-Kanca devreye girer, sunucu kendi kendine `npm ci` + `npm run build` +
-`pm2 reload` yapar. `pm2 reload` siteyi kesintiye uğratmadan yeniler.
+(`spf.privateemail.com` Namecheap'in mail sunucusu — mevcut e-posta gönderimi
+bozulmasın diye o da listede kalmalı.)
 
-Çıktıyı canlı olarak terminalinizde görürsünüz — hata olursa orada belli olur.
+---
+
+## Güncelleme (sonraki değişikliklerde)
+
+Adım 1-4'ü tekrarlayın. Kısaca:
+
+```
+npm run build
+cd out && tar -czf ../site.tar.gz . && cd ..
+scp -P 65002 site.tar.gz u343309152@46.17.175.226:~/
+ssh -p 65002 u343309152@46.17.175.226 "cd ~/domains/dogrularseramik.com/public_html && rm -rf ./* ./.htaccess && tar -xzf ~/site.tar.gz -C . && rm ~/site.tar.gz"
+```
 
 ---
 
 ## Sorun giderme
 
-| Belirti | Bakılacak yer |
+| Belirti | Sebep / çözüm |
 |---|---|
-| Site açılmıyor | `pm2 logs dogrular-seramik --lines 50` |
-| 502 Bad Gateway | Node çalışmıyor → `pm2 status`, sonra `curl -I http://127.0.0.1:3001` |
-| Görseller gelmiyor | nginx `root` yolu → `/var/www/dogrular-seramik/public` var mı? |
-| Form mail atmıyor | `.env.production` var mı, `chmod 600` mu, `pm2 reload` yapıldı mı? |
-| Derleme çöküyor | RAM yetersiz → Adım 5'teki takas alanı |
-| SSL alınamıyor | DNS henüz yayılmamış → `dig +short www.dogrularseramik.com` |
-| `git push` reddedildi | Sunucudaki depo yolu yanlış → `git remote -v` ile kontrol edin |
-| Kanca çalışmıyor | `chmod +x` unutulmuş olabilir → `ls -l /var/git/dogrular-seramik.git/hooks/post-receive` |
+| Sayfalar 404 | `.htaccess` yüklenmemiş olabilir (gizli dosya) → `ls -la` ile kontrol edin |
+| Sonsuz yönlendirme döngüsü | SSL henüz kurulmamış → hPanel'den SSL kurun |
+| Görseller gelmiyor | Arşiv eksik açılmış → `du -sh public_html` ~286 MB olmalı |
+| Form "Mail gönderilemedi" | PHP `mail()` kapalı olabilir → hPanel → PHP Yapılandırma |
+| Form mailleri spam'e düşüyor | SPF kaydı eksik → Adım 7 |
+| Alan adı hâlâ eski siteyi gösteriyor | DNS yayılmamış → `dig +short www.dogrularseramik.com` |
+
+---
+
+## Not: VPS'e geçilirse
+
+`ecosystem.config.js` ve `deploy/nginx.conf` dosyaları bir VPS kurulumu için
+hazırlanmıştı ve projede duruyor. VPS'e geçilirse `next.config.ts` içindeki
+`output: 'export'` satırı kaldırılır, `form-gonder.php` yerine Node tabanlı
+mail rotası geri getirilir. Şu anki paylaşımlı hosting için bu dosyalar
+kullanılmıyor.
