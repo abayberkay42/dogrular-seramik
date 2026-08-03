@@ -1,7 +1,14 @@
 # Sunucuya Kurulum — Doğrular Seramik
 
 VPS üzerinde Next.js 15 + pm2 + nginx ile yayın.
-Kaynak: GitHub deposu. Sunucu kodu `git pull` ile günceller; dosya kopyalamak (scp) gerekmez.
+
+Kod sunucuya **doğrudan `git push` ile** gider — GitHub veya başka bir aracı servis
+gerekmez. Sunucuda çıplak (bare) bir git deposu tutulur; siz yerelden ona
+gönderirsiniz, sunucu otomatik derleyip siteyi yeniler.
+
+**Neden bu yöntem:** proje 268 MB. `scp` ile her seferinde tamamını yüklemek
+gerekirdi; git yalnızca **değişen dosyaları** gönderir. İlk gönderim birkaç
+dakika sürer, sonraki güncellemeler saniyeler içinde biter.
 
 ---
 
@@ -14,63 +21,69 @@ Kaynak: GitHub deposu. Sunucu kodu `git pull` ile günceller; dosya kopyalamak (
 | git | herhangi | `git --version` |
 | pm2 | son sürüm | `pm2 -v` |
 | nginx | herhangi | `nginx -v` |
-| Boş disk | en az 3 GB | `df -h` |
+| Boş disk | en az 3 GB | `df -h /` |
 | RAM | en az 2 GB (derleme için) | `free -h` |
 
 Node 20+ şart — proje Next.js 15 kullanıyor.
 
+Root ile bağlanıyorsanız aşağıdaki komutlardaki `sudo` kelimelerini silin.
+
 ---
 
-## Adım 1 — Sunucuya bağlanın
+## Adım 1 — Sunucuyu hazırlayın
 
 ```
-ssh kullanici@SUNUCU_IP
+ssh root@SUNUCU_IP
 ```
 
 Eksik araçları kurun (Ubuntu/Debian):
 
 ```
-sudo apt update
-sudo apt install -y git nginx
-curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash -
-sudo apt install -y nodejs
-sudo npm install -g pm2
+apt update
+apt install -y git nginx
+curl -fsSL https://deb.nodesource.com/setup_20.x | bash -
+apt install -y nodejs
+npm install -g pm2
+```
+
+Doğrulayın — hepsi sürüm numarası yazdırmalı:
+
+```
+node -v && npm -v && git --version && pm2 -v && nginx -v
 ```
 
 ---
 
-## Adım 2 — Kodu çekin
+## Adım 2 — Sunucuda çıplak depo oluşturun
+
+Sitenin kodu `/var/www/dogrular-seramik` içinde çalışacak, git verisi ise
+ayrı bir yerde (`/var/git`) durur.
 
 ```
-sudo mkdir -p /var/www
-sudo chown -R $USER:$USER /var/www
-cd /var/www
-git clone https://github.com/KULLANICI/dogrular-seramik.git
-cd dogrular-seramik
+mkdir -p /var/git /var/www/dogrular-seramik /var/log/pm2
+cd /var/git
+git init --bare dogrular-seramik.git
 ```
-
-Depo özel (private) ise git kullanıcı adı + **personal access token** ister.
-Token: GitHub → Settings → Developer settings → Personal access tokens → Fine-grained →
-sadece bu depoya `Contents: Read` yetkisi.
 
 ---
 
 ## Adım 3 — Gmail bilgilerini girin
 
-Örnek İste formunun mail gönderebilmesi için gerekli. Bu dosya git'e **gitmez**.
+Örnek İste formunun mail gönderebilmesi için gerekli.
+Bu dosya git'e **gitmez**, sunucuda kalır ve güncellemelerde silinmez.
 
 ```
 nano /var/www/dogrular-seramik/.env.production
 ```
 
-İçine yazılacak (değerleri kendi bilgilerinizle değiştirin):
+İçine (değerleri kendi bilgilerinizle değiştirin):
 
 ```
 GMAIL_USER=ornek@gmail.com
 GMAIL_APP_PASSWORD=uygulamasifresi
 ```
 
-Kaydedip izinleri kısıtlayın — şifre içeriyor:
+Kaydedin, sonra izinleri kısıtlayın — şifre içeriyor:
 
 ```
 chmod 600 /var/www/dogrular-seramik/.env.production
@@ -78,38 +91,62 @@ chmod 600 /var/www/dogrular-seramik/.env.production
 
 ---
 
-## Adım 4 — Kurun ve derleyin
+## Adım 4 — İlk gönderimi yapın (yerel bilgisayardan)
+
+Kendi bilgisayarınızda, proje klasöründe:
+
+```
+git remote add sunucu ssh://root@SUNUCU_IP/var/git/dogrular-seramik.git
+git push sunucu main
+```
+
+268 MB gittiği için ilk gönderim birkaç dakika sürer.
+Bu aşamada sunucu henüz otomatik derleme yapmaz — kancayı Adım 5'te kuracağız.
+
+---
+
+## Adım 5 — Otomatik dağıtım kancasını kurun (sunucuda)
+
+Artık kod sunucuda olduğu için kanca dosyası da orada:
+
+```
+cp /var/www/dogrular-seramik/deploy/post-receive /var/git/dogrular-seramik.git/hooks/post-receive
+chmod +x /var/git/dogrular-seramik.git/hooks/post-receive
+```
+
+Kanca henüz çalışmadığı için ilk kurulumu elle yapın:
 
 ```
 cd /var/www/dogrular-seramik
+git --work-tree=/var/www/dogrular-seramik --git-dir=/var/git/dogrular-seramik.git checkout -f main
 npm ci
 npm run build
 ```
 
 `npm run build` 2-5 dakika sürer, 209 sayfa üretir.
-Sunucunun RAM'i 2 GB'ın altındaysa derleme çökebilir — o durumda geçici takas alanı açın:
+
+**RAM 2 GB'ın altındaysa** derleme çökebilir. Önce takas alanı açın:
 
 ```
-sudo fallocate -l 2G /swapfile && sudo chmod 600 /swapfile
-sudo mkswap /swapfile && sudo swapon /swapfile
+fallocate -l 2G /swapfile && chmod 600 /swapfile
+mkswap /swapfile && swapon /swapfile
 ```
 
 ---
 
-## Adım 5 — pm2 ile çalıştırın
+## Adım 6 — pm2 ile çalıştırın
 
 ```
-sudo mkdir -p /var/log/pm2 && sudo chown -R $USER:$USER /var/log/pm2
 cd /var/www/dogrular-seramik
 pm2 start ecosystem.config.js --env production
 pm2 save
 pm2 startup
 ```
 
-`pm2 startup` size bir `sudo env ...` komutu yazdırır — onu kopyalayıp çalıştırın.
+`pm2 startup` size bir komut yazdırır — onu kopyalayıp çalıştırın.
 Sunucu yeniden başladığında site otomatik ayağa kalkar.
 
-Çalıştığını doğrulayın:
+Doğrulayın:
 
 ```
 pm2 status
@@ -120,30 +157,42 @@ curl -I http://127.0.0.1:3001
 
 ---
 
-## Adım 6 — nginx
+## Adım 7 — nginx
 
 ```
-sudo cp /var/www/dogrular-seramik/deploy/nginx.conf /etc/nginx/sites-available/dogrularseramik
-sudo ln -s /etc/nginx/sites-available/dogrularseramik /etc/nginx/sites-enabled/
-sudo rm -f /etc/nginx/sites-enabled/default
-sudo nginx -t
-sudo systemctl reload nginx
+cp /var/www/dogrular-seramik/deploy/nginx.conf /etc/nginx/sites-available/dogrularseramik
+ln -s /etc/nginx/sites-available/dogrularseramik /etc/nginx/sites-enabled/
+rm -f /etc/nginx/sites-enabled/default
+nginx -t
+systemctl reload nginx
 ```
 
-`nginx -t` "syntax is ok" demeli. Hata verirse dosya yolunu kontrol edin.
+`nginx -t` "syntax is ok" demeli.
+
+Güvenlik duvarı varsa portları açın:
+
+```
+ufw allow 80/tcp && ufw allow 443/tcp
+```
 
 ---
 
-## Adım 7 — DNS
+## Adım 8 — DNS
 
-Alan adını sunucuya yönlendirin. **MX kayıtlarına dokunmayın** — e-posta onlara bağlı.
+Alan adını sunucuya yönlendirin.
+
+⚠️ **MX ve TXT kayıtlarına dokunmayın** — `@dogrularseramik.com` e-postaları onlara bağlı,
+silinirse gelen mailler kaybolur.
 
 | Tip | Ad | Değer |
 |---|---|---|
 | A | `@` | SUNUCU_IP |
 | A | `www` | SUNUCU_IP |
 
-Yayılmasını bekleyin (10 dk – 2 saat), sonra kontrol edin:
+Bu değişiklik Namecheap alan adı panelinden veya cPanel → Zone Editor'den yapılır;
+sunucuya root erişimi bunun için **yeterli değildir**.
+
+Yayılmayı bekleyin (10 dk – 2 saat), sonra kontrol edin:
 
 ```
 dig +short www.dogrularseramik.com
@@ -153,35 +202,36 @@ Sunucunun IP'sini döndürmeli.
 
 ---
 
-## Adım 8 — SSL sertifikası
+## Adım 9 — SSL sertifikası
 
 DNS yayıldıktan **sonra** çalıştırın, öncesinde başarısız olur:
 
 ```
-sudo apt install -y certbot python3-certbot-nginx
-sudo certbot --nginx -d dogrularseramik.com -d www.dogrularseramik.com
+apt install -y certbot python3-certbot-nginx
+certbot --nginx -d dogrularseramik.com -d www.dogrularseramik.com
 ```
 
 Certbot 443 bloğunu ve HTTP→HTTPS yönlendirmesini otomatik ekler.
-Sertifika 90 günlük ve kendini yeniler; kontrol:
+Sertifika 90 günlük, kendini yeniler. Kontrol:
 
 ```
-sudo certbot renew --dry-run
+certbot renew --dry-run
 ```
 
 ---
 
-## Güncelleme (her kod değişikliğinde)
+## Güncelleme (kurulumdan sonra)
+
+Yerel bilgisayarınızda tek komut yeter:
 
 ```
-cd /var/www/dogrular-seramik
-git pull
-npm ci
-npm run build
-pm2 reload dogrular-seramik
+git push sunucu main
 ```
 
-`pm2 reload` siteyi kesintiye uğratmadan yeniden başlatır.
+Kanca devreye girer, sunucu kendi kendine `npm ci` + `npm run build` +
+`pm2 reload` yapar. `pm2 reload` siteyi kesintiye uğratmadan yeniler.
+
+Çıktıyı canlı olarak terminalinizde görürsünüz — hata olursa orada belli olur.
 
 ---
 
@@ -191,7 +241,9 @@ pm2 reload dogrular-seramik
 |---|---|
 | Site açılmıyor | `pm2 logs dogrular-seramik --lines 50` |
 | 502 Bad Gateway | Node çalışmıyor → `pm2 status`, sonra `curl -I http://127.0.0.1:3001` |
-| Görseller gelmiyor | nginx `root` yolu yanlış → `/var/www/dogrular-seramik/public` var mı? |
-| Form mail atmıyor | `.env.production` var mı, `chmod 600` mu, pm2 yeniden başlatıldı mı? |
-| Derleme çöküyor | RAM yetersiz → Adım 4'teki takas alanı |
+| Görseller gelmiyor | nginx `root` yolu → `/var/www/dogrular-seramik/public` var mı? |
+| Form mail atmıyor | `.env.production` var mı, `chmod 600` mu, `pm2 reload` yapıldı mı? |
+| Derleme çöküyor | RAM yetersiz → Adım 5'teki takas alanı |
 | SSL alınamıyor | DNS henüz yayılmamış → `dig +short www.dogrularseramik.com` |
+| `git push` reddedildi | Sunucudaki depo yolu yanlış → `git remote -v` ile kontrol edin |
+| Kanca çalışmıyor | `chmod +x` unutulmuş olabilir → `ls -l /var/git/dogrular-seramik.git/hooks/post-receive` |

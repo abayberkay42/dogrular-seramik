@@ -1,0 +1,55 @@
+#!/bin/bash
+#
+# Doğrular Seramik — sunucu tarafı dağıtım kancası (git hook)
+#
+# Yerel bilgisayardan `git push sunucu main` yapıldığında sunucuda
+# otomatik çalışır: kodu açar, bağımlılıkları kurar, derler, siteyi
+# kesintisiz yeniden başlatır.
+#
+# Kurulum:
+#   cp deploy/post-receive /var/git/dogrular-seramik.git/hooks/post-receive
+#   chmod +x /var/git/dogrular-seramik.git/hooks/post-receive
+#
+set -e
+
+CALISMA_DIZINI=/var/www/dogrular-seramik
+DEPO=/var/git/dogrular-seramik.git
+DAL=main
+PM2_ADI=dogrular-seramik
+
+while read -r _eski _yeni ref; do
+  if [ "$ref" != "refs/heads/$DAL" ]; then
+    echo ">> '$ref' atlandı (yalnızca $DAL dalı yayına alınır)"
+    continue
+  fi
+
+  echo ">> Kod açılıyor: $CALISMA_DIZINI"
+  mkdir -p "$CALISMA_DIZINI"
+  git --work-tree="$CALISMA_DIZINI" --git-dir="$DEPO" checkout -f "$DAL"
+
+  cd "$CALISMA_DIZINI"
+
+  # .env.production burada tutulur ve git'e dahil değildir; checkout onu
+  # silmez çünkü takip edilmiyor. Yine de yoksa uyaralım — dosya olmadan
+  # Örnek İste formu mail gönderemez.
+  if [ ! -f .env.production ]; then
+    echo "!! UYARI: .env.production yok. Örnek İste formu mail gönderemez."
+    echo "!! İçine GMAIL_USER ve GMAIL_APP_PASSWORD yazın, chmod 600 yapın."
+  fi
+
+  echo ">> Bağımlılıklar kuruluyor (npm ci)"
+  npm ci --no-audit --no-fund
+
+  echo ">> Derleniyor (npm run build)"
+  npm run build
+
+  echo ">> pm2 yeniden yükleniyor"
+  if pm2 describe "$PM2_ADI" > /dev/null 2>&1; then
+    pm2 reload "$PM2_ADI" --update-env
+  else
+    pm2 start ecosystem.config.js --env production
+    pm2 save
+  fi
+
+  echo ">> Yayına alındı."
+done
