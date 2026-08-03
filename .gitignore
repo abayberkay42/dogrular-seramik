@@ -75,3 +75,6 @@ Thumbs.db
 # Netlify yapılandırması — dağıtım Vercel üzerinden yapılıyor.
 # Dosya diskte duruyor, yalnızca git'e gönderilmiyor.
 /netlify.toml
+
+# Sunucuya yuklenen arsiv
+/site.tar.gz
